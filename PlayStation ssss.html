@@ -1,0 +1,1671 @@
+<!doctype html>
+<html lang="pt-BR"> 
+ <head>
+  <link rel="preconnect" href="https://mercadoplastips4.com">
+  <link rel="preconnect" href="https://www.google.com">
+  <link rel="preconnect" href="https://data.mercadolibre.com">
+  <link rel="preconnect" href="https://http2.mlstatic.com">
+  <link rel="preconnect" href="https://stats.g.doubleclick.net">
+  <link rel="preconnect" href="https://analytics.mercadolivre.com.br">
+  <link rel="preconnect" href="https://analytics.mercadolivre.com">
+  <link rel="preconnect" href="https://www.google.com.br">
+  <script type="text/javascript" src="">window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"3009922991","applicationID":"347213770","applicationTime":246.38622,"transactionName":"bgRaYENYWBdWABdfXVdOfUxBS1MXRAkQGXV8NRcbQRYMFEUMB0NRTShcHGpYGx52TjlrSQocYwQcAGtPHg==","queueTime":0,"ttGuid":"a2de95b67fa6c8ce","agentToken":null}; (window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true}};(window.NREUM||(NREUM={})).loader_config={xpid:"XQ4OVF5VGwAEU1NTBAYAVg==",licenseKey:"3009922991",applicationID:"347213770"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(27),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{l?l-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(28),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(l+=1)}),c.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){_++,T=g.hash,this[u]=y.now()}function o(){_--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,p="cb"+c,l="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),M=t(14),P=t(9),S=t("ee"),C=S.get("tracer");t(16),y.features.spa=!0;var T,_=0;S.on(u,r),S.on(p,r),S.on(d,o),S.on(l,o),S.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),M.buffer([u,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+c]),C.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(M,"send-xhr"+c),a(S,"xhr-resolved"),a(S,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,_>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(28),a=t(27);e.exports=o;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,p=c.Response,l=c.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],p),s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t("wrap-function")(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t("wrap-function"),a=t("ee").get("promise"),c=i(a),s=t(27),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",f="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(24),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(21),m=t(20),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<p;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(20);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(27),c=t(28),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],21:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],22:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(29);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],23:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),p=t("loader"),l=t(26),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}l(c)}},{}],24:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],25:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],26:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],27:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],28:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],29:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function l(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(27),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(g,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}var a=t(22),c=t("handle"),s=t(27),f=t("ee"),u=t(25),d=window,p=d.document,l="addEventListener",h="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1184.min.js"},y=m&&v&&v[l]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:y,userAgent:u};t(19),t(23),p[l]?(p[l]("DOMContentLoaded",i,!1),d[l]("load",r,!1)):(p[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var b=0},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(28),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,16,5,3,4]);
+  </script>
+  <noscript>
+   <meta http-equiv="refresh" content="0;URL=//www.mercadolivre.com.br/gz/webdevice/config?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616&amp;noscript=true">
+  </noscript> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <meta name="HandheldFriendly" content="True"> 
+  <meta http-equiv="cleartype" content="on"> 
+  <meta name="browser-support" content="samesite=true"> 
+  <link rel="preload" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-head-react="true">
+  <link rel="preload" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-head-react="true">
+  <link rel="preload" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-head-react="true">
+  <style data-head-react="true">@font-face{font-family:'Proxima Nova';font-weight:300;font-display:swap;font-style:normal;src:url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff2) format("woff2"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff) format("woff"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.ttf) format("truetype")}@font-face{font-family:'Proxima Nova';font-weight:400;font-display:swap;font-style:normal;src:url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff2) format("woff2"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff) format("woff"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.ttf) format("truetype")}@font-face{font-family:'Proxima Nova';font-weight:600;font-display:swap;font-style:normal;src:url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff2) format("woff2"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff) format("woff"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.ttf) format("truetype")}
+  </style>
+  <link href="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.12.0/mercadolibre/favicon.svg" rel="icon" data-head-react="true">
+  <link href="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.12.0/mercadolibre/180x180.png" rel="apple-touch-icon" data-head-react="true">
+  <meta name="csrf-token" content="azmwWUwo-6LO2QjAT-WRsaTpQK1NnpXi8GGQ" data-head-react="true">
+  <script type="application/ld+json" src="">{"name":"Sony PlayStation 4 Slim 1TB Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank preto","image":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_NQ_NP_912332-MLA44183128109_112020-O.webp","gtin8":"00711719538660","offers":{"price":2950,"availability":"http:\u002F\u002Fschema.org\u002FInStock","url":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616","@type":"Offer","priceCurrency":"BRL","priceValidUntil":"2021-01-06"},"review":[{"author":{"name":"Usuário do Mercado Livre","@type":"Person"},"@type":"Review","reviewBody":"Dei de presente para o meu filho e ele está adorando.","reviewRating":{"bestRating":5,"ratingValue":5,"worstRating":1}},{"author":{"name":"Usuário do Mercado Livre","@type":"Person"},"@type":"Review","reviewBody":"Tudo certo, o playstation 4 slim 1tb é top!.","reviewRating":{"bestRating":5,"ratingValue":5,"worstRating":1}},{"author":{"name":"Usuário do Mercado Livre","@type":"Person"},"@type":"Review","reviewBody":"Show de bola recomendo a todos muito bom.","reviewRating":{"bestRating":5,"ratingValue":5,"worstRating":1}}],"description":"Inclui controle. | Com 3  jogos. | Memória RAM de 8GB. | Conta com: 1 cabo hdmi, 1 cabo usb, 1 cabo de alimentação, 1 assinatura a playstation plus por 3 meses. | Horas de diversão garantidas.","brand":"Sony","sku":"MLB16261616","weight":"2.1 kg","width":"265 mm","height":"39 mm","@context":"http:\u002F\u002Fschema.org","@type":"Product","aggregateRating":{"@type":"AggregateRating","ratingValue":5,"reviewCount":6},"itemCondition":"https:\u002F\u002Fschema.org\u002FNewCondition","productID":"MLB16261616"}
+  </script>
+  <script type="application/ld+json" src="">{"@context":"http:\u002F\u002Fschema.org","@type":"BreadcrumbList","itemListElement":[{"position":1,"item":{"name":"Games","@id":"https:\u002F\u002Fgames.mercadolivre.com.br\u002Fgames\u002F"},"@type":"ListItem"},{"position":2,"item":{"name":"Consoles","@id":"https:\u002F\u002Fgames.mercadolivre.com.br\u002Fconsoles\u002F"},"@type":"ListItem"},{"position":3,"item":{"name":"Slim","@id":"https:\u002F\u002Fgames.mercadolivre.com.br\u002Fconsoles\u002Fslim\u002F"},"@type":"ListItem"}]}
+  </script>
+  <script type="application/ld+json" src="">{"about":"Características principais","@context":"http:\u002F\u002Fschema.org","@type":"Table"}
+  </script>
+  <link rel="preload" href="https://http2.mlstatic.com/D_NQ_NP_912332-MLA44183128109_112020-O.webp" as="image" data-head-react="true">
+  <link rel="preconnect" href="https://securepubads.g.doubleclick.net" data-head-react="true">
+  <link rel="preconnect" href="https://www.googletagservices.com" data-head-react="true">
+  <meta name="description" content="Compre-o no Mercado Livre por R$ 2.950,00 - Pague parcelado - Frete grátis. Encontre mais produtos de Games, Consoles." data-head-react="true">
+  <meta name="twitter:card" content="product" data-head-react="true">
+  <meta name="twitter:site" content="Mercado Livre" data-head-react="true">
+  <meta name="twitter:title" content="Sony PlayStation 4 Slim 1TB Marvel&amp;quots Spider-Man/Horizon Zero Dawn Complete Edition/Ratchet &amp; Clank preto" data-head-react="true">
+  <meta name="twitter:description" content="Inclui controle. | Com 3  jogos. | Memória RAM de 8GB. | Conta com: 1 cabo hdmi, 1 cabo usb, 1 cabo de alimentação, 1 assinatura a playstation plus por 3 meses. | Horas de diversão garantidas." data-head-react="true">
+  <meta name="twitter:image" content="https://http2.mlstatic.com/D_NQ_NP_912332-MLA44183128109_112020-O.webp" data-head-react="true">
+  <meta name="twitter:domain" content="mercadolivre.com.br" data-head-react="true">
+  <meta name="twitter:app:name:iphone" content="Mercado Libre" data-head-react="true">
+  <meta name="twitter:app:id:iphone" content="463624852" data-head-react="true">
+  <meta name="twitter:app:url:iphone" content="meli://item?id=MLB1731058383" data-head-react="true">
+  <meta name="twitter:app:name:ipad" content="Mercado Libre" data-head-react="true">
+  <meta name="twitter:app:id:ipad" content="463624852" data-head-react="true">
+  <meta name="twitter:app:url:ipad" content="meli://item?id=MLB1731058383" data-head-react="true">
+  <meta name="twitter:app:name:googleplay" content="Mercado Libre" data-head-react="true">
+  <meta name="twitter:app:id:googleplay" content="com.mercadolibre" data-head-react="true">
+  <meta name="twitter:app:url:googleplay" content="meli://item?id=MLB1731058383" data-head-react="true">
+  <meta property="og:description" content="Inclui controle. | Com 3  jogos. | Memória RAM de 8GB. | Conta com: 1 cabo hdmi, 1 cabo usb, 1 cabo de alimentação, 1 assinatura a playstation plus por 3 meses. | Horas de diversão garantidas." data-head-react="true">
+  <meta property="og:image" content="https://http2.mlstatic.com/D_NQ_NP_912332-MLA44183128109_112020-O.webp" data-head-react="true">
+  <meta property="og:title" content="Sony PlayStation 4 Slim 1TB Marvel&amp;quots Spider-Man/Horizon Zero Dawn Complete Edition/Ratchet &amp; Clank preto - R$ 2.950,00" data-head-react="true">
+  <meta property="og:type" content="meli-br:product" data-head-react="true">
+  <meta property="og:url" content="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616" data-head-react="true">
+  <meta property="fb:app_id" content="253960718025486" data-head-react="true">
+  <meta name="al:android:url" property="al:android:url" content="meli://item?id=MLB1731058383" data-head-react="true">
+  <meta name="al:android:app_name" property="al:android:app_name" content="Mercado Libre" data-head-react="true">
+  <meta name="al:android:package" property="al:android:package" content="com.mercadolibre" data-head-react="true">
+  <meta name="al:iphone:url" property="al:ios:url" content="meli://item?id=MLB1731058383" data-head-react="true">
+  <meta name="al:iphone:app_name" property="al:ios:app_name" content="Mercado Libre" data-head-react="true">
+  <meta name="al:iphone:app_store_id" property="al:ios:app_store_id" content="463624852" data-head-react="true">
+  <title>Sony PlayStation 4 Slim 1TB Marvel's Spider-Man/Horizon Zero Dawn Complete Edition/Ratchet &amp; Clank preto | Mercado Livre</title>
+  <link rel="canonical" href="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616" data-head-react="true">
+  <link href="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.12.0/mercadolibre/navigation-mobile.css" rel="stylesheet" type="text/css"> 
+  <link href="https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/pdp.mobile.61bc4414.css" rel="stylesheet" type="text/css"> 
+  <script src="">
+(function(a,b){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date})(window,"meli_ga");
+meli_ga("set", "title", "app-vpp-frontend-nodejs-2.15.1");
+meli_ga("set", "page", "/PDP/");
+meli_ga("set", "contentGroup1", "/NONE/PDP/");
+meli_ga("set", "contentGroup2", "/NONE/PDP/");
+meli_ga("set", "contentGroup3", "/NONE/PDP/");
+meli_ga("set", "dimension1", "mobile");
+meli_ga("set", "dimension7", "NONE");
+meli_ga("set", "dimension8", "NONE");
+(function(d) {
+      var i = d.createElement('iframe');
+      (i.frameElement || i).style.cssText = 'width: 0; height: 0; border: 0; position: absolute';
+      i.src = "about:blank";
+      i.id = "GoogleAnalyticsIframe";
+      var w = d.getElementsByTagName('script')[0];
+      w.parentNode.insertBefore(i, w);
+      var doc = i.contentWindow.document;
+      var s = doc.createElement('script');
+      s.text = [
+        'var initGoogleAnalytics = function(){',
+          'var js = document.createElement(\'script\');',
+          'js.src = \'https://http2.mlstatic.com/analytics/ga/mlb-ml-analytics.min.js\';',
+          'js.crossorigin = "anonymous";',
+          'document.documentElement.appendChild(js);',
+        '};',
+        'setTimeout(initGoogleAnalytics,0);',
+      ].join('');
+      doc.documentElement.appendChild(s);
+    })(document);
+
+  </script> 
+ </head>
+ <body data-site="ML" data-country="BR">
+  <input type="checkbox" id="nav-header-menu-switch">
+  <header role="banner" data-siteid="MLB" class="nav-header nav-header-plus">
+   <div class="nav-bounds nav-bounds-with-cart nav-bounds-with-cp">
+    <a class="nav-logo" href="https://www.mercadolivre.com.br" tabindex="2">Mercado Livre Brasil - Onde comprar e vender de Tudo</a>
+    <div class="nav-header-menu-wrapper">
+     <label for="nav-header-menu-switch" aria-controls="nav-header-menu">
+      <span class="hamburger-top-bread"></span>
+      <span class="hamburger-patty"></span>
+      <span class="hamburger-bottom-bread"></span>
+     </label>
+     <nav id="nav-header-menu-mobile" class="nav-header-menu-mobile-guest">
+      <div id="nav-header-menu-mobile-content">
+       <div id="nav-header-menu-mobile-user-info" class="nav-header-menu-mobile-guest">
+        <div class="nav-header-menu-mobile-guest-logo">
+         <svg class="nav-header-menu-mobile-guest-icon" width="28" height="35" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27.343 33.706l-1.356.64A13.25 13.25 0 0 0 14 26.75c-5.17 0-9.8 2.988-11.978 7.578l-1.356-.643A14.75 14.75 0 0 1 14 25.25a14.75 14.75 0 0 1 13.343 8.456zM14 21.75C8.063 21.75 3.25 16.937 3.25 11S8.063.25 14 .25 24.75 5.063 24.75 11 19.937 21.75 14 21.75zm0-1.5a9.25 9.25 0 1 0 0-18.5 9.25 9.25 0 0 0 0 18.5zm0-2.5v-1.5a5.25 5.25 0 1 0 0-10.5v-1.5a6.75 6.75 0 0 1 0 13.5z" fill="#BBB" fill-rule="nonzero"></path>
+         </svg>
+        </div>
+        <h3 class="nav-header-menu-mobile-guest-title">Bem-vindo</h3>
+        <p class="nav-header-menu-mobile-guest-text">Entra na sua conta para ver suas compras, favoritos etc.</p>
+        <div class="nav-header-menu-mobile-guest-buttons">
+         <a rel="nofollow" class="nav-mobile-button nav-mobile-button-filled" href="https://www.mercadolivre.com/jms/mlb/lgz/login?platform_id=ML&amp;go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616&amp;loginType=explicit">Entre</a>
+         <a rel="nofollow" class="nav-mobile-button nav-mobile-button-outline" href="https://www.mercadolivre.com.br/registration?confirmation_url=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616">Crie a sua conta</a>
+        </div>
+       </div>
+       <ul>
+        <li>
+         <a href="https://www.mercadolivre.com.br#menu-user">
+          <i class="nav-icon-home"></i>
+          <span>Início</span>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.mercadolivre.com.br/ofertas#menu-user">
+          <i class="nav-icon-deals-mobile"></i>
+          <span>Ofertas do dia</span>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.mercadolivre.com.br/gz/home/navigation#menu-user">
+          <i class="nav-icon-history-mobile"></i>
+          <span>Histórico</span>
+         </a>
+        </li>
+        <li>
+         <a href="https://vender.mercadolivre.com.br#menu-user">
+          <i class="nav-icon-vender-mobile"></i>
+          <span>Vender</span>
+         </a>
+        </li>
+       </ul>
+       <ul>
+        <li>
+         <a href="https://www.mercadolivre.com.br/categorias#menu-user">
+          <i class="nav-icon-categories-mobile"></i>
+          <span>Categorias</span>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.mercadolivre.com.br/ofertas/supermercado#menu-user">
+          <i class="nav-icon-supermercado"></i>
+          <span>Supermercado</span>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.mercadolivre.com.br/lojas-oficiais#menu-user">
+          <i class="nav-icon-stores-mobile"></i>
+          <span>Lojas oficiais</span>
+         </a>
+        </li>
+       </ul>
+       <ul>
+        <li>
+         <a href="https://www.mercadolivre.com.br/ajuda#menu-user">
+          <i class="nav-icon-help-mobile"></i>
+          <span>Contato</span>
+         </a>
+        </li>
+       </ul>
+       <ul>
+        <li>
+         <a href="https://www.mercadolivre.com.br/l/app#menu-user" id="nav-header-menu-download-mobile">
+          <i class="nav-icon-download-mobile"></i>
+          <span>Compre e venda com o app!</span>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </nav>
+    </div>
+    <form class="nav-search" action="https://www.mercadolivre.com.br/jm/search" method="GET" role="search">
+     <input type="text" class="nav-search-input" aria-label="Digite o que você quer encontrar" name="as_word" placeholder="Estou buscando…" maxlength="120" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" tabindex="3">
+     <button class="nav-search-clear-btn" type="button" title="Limpiar"></button>
+     <button class="nav-search-close-btn" type="button" title="Cerrar"></button>
+     <button type="submit" class="nav-search-btn" tabindex="4">
+      <div role="img" aria-label="Buscar" class="nav-icon-search"></div>
+     </button>
+    </form>
+    <a href="https://www.mercadolivre.com.br/gz/cart" title="Carrinho de compras" class="nav-cart nav-cart-empty" id="nav-cart" tabindex="9">
+     <i class="nav-icon-cart"></i>
+     <span class="nav-icon-cart-quantity" <="" span="">
+    </span></a>
+    <a href="https://www.mercadolivre.com.br/navigation/addresses-hub?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16 class=" nav-header-cp-anchor"="" data-js="cp">Informe seu CEP</a>
+   </div>
+  </header>
+  <main role="main" id="root-app">
+   <div style="display:contents"></div>
+   <div class="ui-pdp">
+    <div class="ui-pdp-container ui-pdp-container--pdp">
+     <div style="display:contents"></div>
+     <div class="ui-pdp-container__row">
+      <div style="display:contents">
+       <div class="ui-pdp-header pt-16 pl-16 pr-16">
+        <div class="ui-pdp-header__subtitle">
+         <span class="ui-pdp-subtitle">Novo | 151 vendidos</span>
+        </div>
+        <h1 class="ui-pdp-title">Sony PlayStation 4 Slim 1TB Marvel's Spider-Man/Horizon Zero /Ratchet &amp; Clank preto</h1>
+        <div class="ui-pdp-header__info">
+         <a href="https://www.mercadolivre.com.br/noindex/catalog/reviews/MLB16261614?noIndex=true&amp;access=view_all&amp;controlled=true&amp;title=Opini%C3%B5es%20sobre%20Sony%20PlayStation%204%20Slim%20Marvel's%20Spider-Man/Horizon%20Zero%20Dawn%20Complete%20Edition/Ratchet%20&amp;%20Clank" class="ui-pdp-review__label">
+          <span class="ui-pdp-review__ratings">
+           <svg class="ui-pdp-icon ui-pdp-icon--star-full" width="10" height="10" viewBox="0 0 10 10">
+            <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+           </svg>
+           <svg class="ui-pdp-icon ui-pdp-icon--star-full" width="10" height="10" viewBox="0 0 10 10">
+            <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+           </svg>
+           <svg class="ui-pdp-icon ui-pdp-icon--star-full" width="10" height="10" viewBox="0 0 10 10">
+            <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+           </svg>
+           <svg class="ui-pdp-icon ui-pdp-icon--star-full" width="10" height="10" viewBox="0 0 10 10">
+            <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+           </svg>
+           <svg class="ui-pdp-icon ui-pdp-icon--star-full" width="10" height="10" viewBox="0 0 10 10">
+            <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+           </svg>
+          </span>
+          <span class="ui-pdp-review__amount">6 opiniões</span>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div style="display:contents"></div>
+     </div>
+     <div class="ui-pdp-container__row mt-16">
+      <div class="ui-pdp-gallery">
+       <div class="ui-pdp-carousel swiper-container">
+        <div class="swiper-wrapper">
+         <a href="https://http2.mlstatic.com/D_NQ_NP_912332-MLA44183128109_112020-O.webp" class="swiper-slide ui-pdp-gallery--horizontal">
+          <img width="1048" height="521" src="https://http2.mlstatic.com/D_NQ_NP_912332-MLA44183128109_112020-O.webp" class="ui-pdp-image ui-pdp-gallery--horizontal" alt="Sony PlayStation 4 Slim 1TB Marvel's Spider-Man/Horizon Zero Dawn Complete Edition/Ratchet &amp; Clank preto">
+         </a>
+         <a href="https://http2.mlstatic.com/D_NQ_NP_852665-MLA44183128110_112020-O.webp" class="swiper-slide ui-pdp-gallery--horizontal">
+          <img width="1091" height="636" src="" class="ui-pdp-image ui-pdp-gallery--horizontal lazy-loadable" data-src="https://http2.mlstatic.com/D_NQ_NP_852665-MLA44183128110_112020-O.webp" alt="Sony PlayStation 4 Slim 1TB Marvel's Spider-Man/Horizon Zero Dawn Complete Edition/Ratchet &amp; Clank preto">
+         </a>
+        </div>
+        <div class="swiper-pagination ui-pdp-carousel__counter">
+         <span class="swiper-pagination-current">
+          1
+          <!-- --> 
+         </span>
+         /
+         <span class="swiper-pagination-total"> 
+          <!-- -->
+          2
+         </span>
+        </div>
+       </div>
+       <div class="ui-pdp-share">
+        <a class="ui-pdp-share__link" title="Compartilhar" href="https://www.mercadolivre.com.br/share">
+         <svg class="ui-pdp-icon ui-pdp-icon--share-gallery" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+          <g fill="none" fill-rule="evenodd">
+           <circle cx="20" cy="20" r="20" fill="#F5F5F5"></circle>
+           <g transform="translate(9 10)">
+            <path fill="#333" fill-rule="nonzero" d="M7.565 11.848a3.002 3.002 0 1 1 0-3.707l4.337-2.173a3.006 3.006 0 0 1 2.9-3.783 3.002 3.002 0 1 1-2.362 4.856L8.102 9.214a3.006 3.006 0 0 1 0 1.562l4.337 2.17a3.002 3.002 0 1 1-.537 1.073l-4.337-2.17zm-2.363-.05a1.802 1.802 0 1 0 0-3.605 1.802 1.802 0 0 0 0 3.604zm9.6 4.802a1.802 1.802 0 1 0 0-3.605 1.802 1.802 0 0 0 0 3.605zm0-9.61a1.802 1.802 0 1 0 0-3.605 1.802 1.802 0 0 0 0 3.605z"></path>
+           </g>
+          </g>
+         </svg>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div style="display:contents">
+      <div class="ui-pdp-container__row mt-15">
+       <div class="ui-pdp-price mt-24 pl-16 pr-16 ui-pdp-price--size-large">
+        <div class="ui-pdp-price__second-line">
+         <span class="price-tag ui-pdp-price__part" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+          <meta itemprop="price" content="2169.">
+          <span class="price-tag-symbol" itemprop="priceCurrency">R$</span>
+          <span class="price-tag-fraction">2.169</span>
+         </span>
+        </div>
+        <div class="ui-pdp-price__subtitles">
+         <span class="ui-pdp-price__subtitle ui-pdp-color--GREEN ui-pdp-family--REGULAR ui-pdp-size--MEDIUM">
+          <span class="ui-pdp-color--BLACK">em</span>
+           12x 
+          <span class="price-tag ui-pdp-price__part">
+           <span class="price-tag-symbol">R$</span>
+           <span class="price-tag-fraction">180</span>
+           <span class="price-tag-decimal-separator">,</span>
+           <span class="price-tag-cents">75</span>
+          </span>
+           sem juros
+         </span>
+        </div>
+        <div class="ui-pdp-price__tags"></div>
+        <div class="ui-pdp-price__payments-link">
+         <a href="https://bityli.com/ebTRh" class="ui-pdp-price__payments-link__link" &gt;ver="" os="" meios="" de="" pagamento<="" a=""></a>
+        </div>
+       </div>
+      </div>
+      <div class="ui-pdp-container__row">
+       <div class="ui-pdp-container__col col-1 ui-pdp-with--separator ui-pdp-with--separator--medium-top"></div>
+      </div>
+      <div class="ui-pdp-container__row"></div>
+     </div>
+     <div style="display:contents">
+      <div class="ui-pdp-container__row">
+       <form class="ui-pdp-buybox mt-24 pl-16 pr-16" method="get">
+        <div class="andes-tooltip__trigger">
+         <div class="ui-pdp-media ui-pdp-shipping ui-pdp-shipping--md ui-pdp-color--GREEN">
+          <figure class="ui-pdp-media__figure">
+           <svg xmlns="http://www.w3.org/2000/svg" class="ui-pdp-icon ui-pdp-icon--shipping ui-pdp-color--GREEN" width="18" height="15" viewBox="0 0 18 15">
+            <path fill-rule="nonzero" d="M7.763 12.207a2.398 2.398 0 0 1-4.726 0H1.8a1.8 1.8 0 0 1-1.8-1.8V2.195a1.8 1.8 0 0 1 1.8-1.8h8.445a1.8 1.8 0 0 1 1.8 1.8v.568l3.322.035L18 6.821v5.386h-2.394a2.398 2.398 0 0 1-4.727 0H7.763zm-.1-1.2h3.182V2.195a.6.6 0 0 0-.6-.6H1.8a.6.6 0 0 0-.6.6v8.212a.6.6 0 0 0 .6.6h1.337a2.399 2.399 0 0 1 4.526 0zm7.843 0H16.8V7.179l-2.086-3.187-2.669-.029v5.76a2.399 2.399 0 0 1 3.461 1.284zm-2.263 1.99a1.198 1.198 0 1 0 0-2.395 1.198 1.198 0 0 0 0 2.396zm-7.843 0a1.198 1.198 0 1 0 0-2.395 1.198 1.198 0 0 0 0 2.396z"></path>
+           </svg>
+          </figure>
+          <div class="ui-pdp-media__body">
+           <h2 class="ui-pdp-color--GREEN ui-pdp-media__title">Frete grátis<!--2--></h2>
+           <h2 class="ui-pdp-color--GRAY ui-pdp-media__text">Saiba os prazos de entrega e as formas de envio.</h2>
+           <div class="ui-pdp-action-modal">
+            <a href="https://www.mercadolivre.com.br/navigation/addresses-hub?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616">
+             <div class="ui-pdp-shipping__action-icon ui-pdp-action-modal__icon">
+              <svg class="ui-pdp-icon ui-pdp-icon--pin ui-pdp-color--BLUE ui-pdp-shipping__action-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+               <path fill-rule="nonzero" d="M6.456 15.227l-.457.536-.457-.536C2.255 11.37.594 8.178.594 5.605a5.405 5.405 0 0 1 10.81 0c0 2.573-1.66 5.765-4.948 9.622zM1.794 5.605c0 2.109 1.392 4.889 4.205 8.3 2.813-3.411 4.205-6.191 4.205-8.3a4.205 4.205 0 0 0-8.41 0zM6 6.8a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4z"></path>
+              </svg>
+             </div>
+             Calcular o prazo de entrega
+            &gt;</a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="ui-pdp-seller mt-25 mb-25">
+         <div class="ui-pdp-seller__header">
+          <div class="ui-pdp-seller__header__info-container">
+           <h3 class="ui-pdp-seller__header__title">
+            <span class="ui-pdp-seller__label-sold">Vendido por</span>
+            <div class="ui-pdp-action-modal ui-pdp-seller__link-trigger">
+             <a class="ui-pdp-action-modal__link" href="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616/seller-info">
+              <span class="ui-pdp-color--BLUE">Marketplacepaybenc<span></span></span>
+             </a>
+            </div>
+           </h3>
+           <p class="ui-pdp-color--BLACK ui-pdp-size--XSMALL ui-pdp-family--REGULAR ui-pdp-seller__header__subtitle">
+            MercadoLíder 
+            <span class="ui-pdp-color--GRAY ui-pdp-size--XSMALL ui-pdp-family--REGULAR ui-pdp-seller__header__subtitle-separator">|</span>
+             345 vendas
+           p&gt;</p>
+          </div>
+         </div>
+        </div>
+        <div class="ui-pdp-buybox__quantity mb-25">
+         <p class="ui-pdp-color--BLACK ui-pdp-size--MEDIUM ui-pdp-family--SEMIBOLD">Último disponível</p><p></p>
+         <input type="hidden" name="quantity" value="1">
+        </div>
+        <div class="ui-pdp-actions">
+         <div class="ui-pdp-header">
+          <div class="ui-pdp-header__subtitle">
+           <span class="ui-pdp-subtitle">Novo | 151 vendidos</span>
+          </div>
+          <h1 class="ui-pdp-title">Sony PlayStation 4 Slim 1TB Marvel's Spider-Man/Horizon Zero Dawn Complete Edition/Ratchet &amp; Clank preto</h1>
+          <div class="ui-pdp-header__info">
+           <a href="https://www.mercadolivre.com.br/noindex/catalog/reviews/MLB16261614?noIndex=true&amp;access=view_all&amp;controlled=true&amp;title=Opini%C3%B5es%20sobre%20Sony%20PlayStation%204%20Slim%20Marvel's%20Spider-Man/Horizon%20Zero%20Dawn%20Complete%20Edition/Ratchet%20&amp;%20Clank" class="ui-pdp-review__label ui-pdp-review__label--link">
+            <span class="ui-pdp-review__ratings">
+             <svg class="ui-pdp-icon ui-pdp-icon--star-full" width="10" height="10" viewBox="0 0 10 10">
+              <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+             </svg>
+             <svg class="ui-pdp-icon ui-pdp-icon--star-full" width="10" height="10" viewBox="0 0 10 10">
+              <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+             </svg>
+             <svg class="ui-pdp-icon ui-pdp-icon--star-full" width="10" height="10" viewBox="0 0 10 10">
+              <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+             </svg>
+             <svg class="ui-pdp-icon ui-pdp-icon--star-full" width="10" height="10" viewBox="0 0 10 10">
+              <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+             </svg>
+             <svg class="ui-pdp-icon ui-pdp-icon--star-full" width="10" height="10" viewBox="0 0 10 10">
+              <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+             </svg>
+            </span>
+            <span class="ui-pdp-review__amount">6 opiniões</span>
+           </a>
+          </div>
+         </div>
+         <div class="ui-pdp-price">
+          <div class="ui-pdp-price__second-line">
+           <span class="price-tag ui-pdp-price__part">
+            <span class="price-tag-symbol">R$</span>
+            <span class="price-tag-fraction">2.950</span>
+           </span>
+          </div>
+          <div class="ui-pdp-price__subtitles">
+           <span class="ui-pdp-price__subtitle ui-pdp-color--GREEN ui-pdp-family--REGULAR ui-pdp-size--MEDIUM">
+            <span class="ui-pdp-color--BLACK">em</span>
+             12x 
+            <span class="price-tag ui-pdp-price__part">
+             <span class="price-tag-symbol">R$</span>
+             <span class="price-tag-fraction">245</span>
+             <span class="price-tag-decimal-separator">,</span>
+             <span class="price-tag-cents">83</span>
+            </span>
+             sem juros
+           </span>
+          </div>
+          <div class="ui-pdp-price__tags"></div>
+          <div class="ui-pdp-price__payments-link">
+           <a href="https://produto.mercadolivre.com.br/noindex/services/MLB1731058383/payments" class="ui-pdp-price__payments-link__link">Ver os meios de pagamento</a>
+          </div>
+         </div>
+         <div class="ui-pdp-actions__container">
+          <button type="submit" class="andes-button andes-button--loud" formaction="https://bityli.com/ebTRh">
+           <span class="andes-button__content">Comprar agora</span>
+          </button>
+          <button type="submit" class="andes-button andes-button--quiet" formaction="https://bityli.com/ebTRh" <span="">Adicionar ao carrinho
+          </button>
+          <input type="hidden" name="mode" value="page">
+          <input type="hidden" name="item_id" value="MLB1731058383">
+          <input type="hidden" name="context" value="pdp">
+          <input type="hidden" name="parent_url">
+         </div>
+        </div>
+       </form>
+      </div>
+     </div>
+     <div style="display:contents">
+      <div class="ui-pdp-container__row">
+       <ul class="ui-pdp-benefits mt-20 pl-16 pr-16 mb-12">
+        <li class="ui-pdp-benefits__item">
+         <div class="ui-pdp-media ui-pdp-color--GRAY">
+          <figure class="ui-pdp-media__figure">
+           <svg class="ui-pdp-icon ui-pdp-icon--return ui-pdp-color--GRAY" xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12">
+            <path d="M2.474 7.2h7.225a2.7 2.7 0 1 0 0-5.4H7V.6h2.7a3.9 3.9 0 1 1 0 7.8H2.473l2.45 2.389-.839.859L.14 7.8l3.945-3.848.838.859L2.473 7.2z"></path>
+           </svg>
+          </figure>
+          <div class="ui-pdp-media__body">
+           <h2 class="ui-pdp-media__title">
+            <a target="_self" href="https://produto.mercadolivre.com.br/noindex/freeReturn/fashion?itemId=MLB1731058383&amp;quantity=1">Devolução grátis</a>
+             Você tem 7 dias a partir da data de recebimento.
+        </h2>
+          </div>
+         </div>
+        </li>
+        <li class="ui-pdp-benefits__item">
+         <div class="ui-pdp-media ui-pdp-color--GRAY">
+          <figure class="ui-pdp-media__figure">
+           <svg class="ui-pdp-icon ui-pdp-icon--protected ui-pdp-color--GRAY" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15">
+            <path fill="#919191" fill-rule="nonzero" d="M.399 3.89v-.6h.6c1.87 0 3.76-.783 5.68-2.374l.383-.317.383.317c1.92 1.59 3.81 2.374 5.68 2.374h.6v.6c0 5.633-2.165 9.242-6.473 10.679l-.19.063-.19-.063C2.564 13.132.4 9.523.4 3.89zm6.663-1.743c-1.8 1.4-3.62 2.179-5.455 2.32.135 4.725 1.947 7.648 5.455 8.898 3.508-1.25 5.32-4.173 5.455-8.898-1.835-.141-3.656-.92-5.455-2.32zm-.905 6.477l3.191-3.582.896.798-4.02 4.513-2.472-2.377.831-.865 1.574 1.513z"></path>
+           </svg>
+          </figure>
+          <div class="ui-pdp-media__body">
+           <h2 class="ui-pdp-media__title">
+            <a target="_blank" href="https://www.mercadolivre.com.br/compra-garantida">Compra Garantida</a>
+            , receba o produto que está esperando ou devolvemos o dinheiro.
+          </h2>
+          </div>
+         </div>
+        </li>
+        <li class="ui-pdp-benefits__item">
+         <div class="ui-pdp-media ui-pdp-color--GRAY">
+          <figure class="ui-pdp-media__figure">
+           <svg class="ui-pdp-icon ui-pdp-icon--loyalty ui-pdp-color--GRAY" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+            <path fill-rule="nonzero" d="M7.598 8.746v1.252h.6c1.657 0 3 1.343 3.001 3v.6H2.798v-.602a2.998 2.998 0 0 1 2.998-2.997h.604l-.001-1.253a3.435 3.435 0 0 1-1.578-.724l-1.586-.446-.106-.041-.739-.37A3.6 3.6 0 0 1 .402 3.947V1.599h2.486l-.2-1.2h8.618l-.2 1.2h2.489v2.346a3.6 3.6 0 0 1-1.988 3.22l-.739.37-.106.041-1.592.448a3.43 3.43 0 0 1-1.572.722zm2.65-2.272l.134-.037.688-.345a2.4 2.4 0 0 0 1.326-2.147V2.799h-1.49l-.52 3.13c-.032.187-.078.37-.138.545zm-6.505-.001a3.453 3.453 0 0 1-.139-.552L3.087 2.8H1.602v1.148a2.4 2.4 0 0 0 1.325 2.145l.687.345.129.036zm.361-4.874l.684 4.126a2.24 2.24 0 0 0 2.21 1.874c1.092 0 2.024-.79 2.204-1.868L9.89 1.6H4.104zm4.094 9.6H5.795c-.784 0-1.45.5-1.697 1.199h5.799c-.248-.699-.915-1.2-1.7-1.2z"></path>
+           </svg>
+          </figure>
+          <div class="ui-pdp-media__body">
+           <h2 class="ui-pdp-media__title">
+            <a target="_blank" href="https://www.mercadolivre.com.br/mercado-pontos">Mercado Pontos</a>
+            . Você acumula 983 pontos.
+           </h2>
+          </div>
+         </div>
+        </li>
+        <li class="ui-pdp-benefits__item">
+         <div class="ui-pdp-media ui-pdp-color--GRAY">
+          <figure class="ui-pdp-media__figure">
+           <svg class="ui-pdp-icon ui-pdp-icon--protected ui-pdp-color--GRAY" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14">
+            <path fill="#919191" fill-rule="nonzero" d="M5.305 10.354l-1.686 3.34-1.24-2.458H0l1.64-3.202a5.2 5.2 0 1 1 8.588.194l1.54 3.008H9.39l-1.241 2.458-1.673-3.315a5.266 5.266 0 0 1-1.171-.025zm-1.001-.237a5.201 5.201 0 0 1-1.975-1.234l-.693 1.353h1.357l.626 1.239.685-1.358zm3.192.064l.653 1.294.625-1.239h1.358l-.617-1.204a5.193 5.193 0 0 1-2.019 1.15zM6 9.2a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
+           </svg>
+          </figure>
+          <div class="ui-pdp-media__body">
+           <h2 class="ui-pdp-media__title">1 anos de garantia de fábrica.</h2>
+          </div>
+         </div>
+        </li>
+       </ul>
+      </div>
+      <div class="ui-pdp-container__row"></div>
+     </div>
+     <div style="display:contents">
+      <div class="ui-pdp-container__row">
+       <div class="ui-pdp-container__col col-1 ui-pdp-container__col--text-center ui-pdp-with--separator ui-pdp-with--separator--medium-top mt-20">
+        <div class="ui-pdp-bookmark ui-pdp-bookmark__link-bookmark">
+         <a class="ui-pdp-bookmark__link-bookmark" href="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616/bookmark?method=add&amp;item_id=MLB1731058383">
+          <svg class="ui-pdp-icon ui-pdp-icon--bookmark ui-pdp-bookmark__icon-bookmark" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+           <g stroke-width="1.0" fill-rule="evenodd">
+            <path stroke="#3483FA" d="M10.977 2.705C11.93 1.618 13.162 1 14.895 1c3.333 0 5.607 2.152 5.607 6.274 0 .08-.002.16-.005.24-.107 2.596-1.876 5.253-4.737 7.892a33.77 33.77 0 0 1-3.165 2.57 32.447 32.447 0 0 1-1.45.983l-.394.243-.394-.243-.009-.005-.021-.014-.08-.05a32.447 32.447 0 0 1-1.34-.914 33.77 33.77 0 0 1-3.165-2.57c-2.86-2.639-4.63-5.296-4.737-7.892A5.839 5.839 0 0 1 1 7.274C1 3.152 3.274 1 6.607 1c1.733 0 2.966.618 3.918 1.705.056.064.137.165.226.282.09-.117.17-.218.226-.282z"></path>
+           </g>
+          </svg>
+          <svg class="ui-pdp-icon ui-pdp-icon--bookmark ui-pdp-bookmark__icon-bookmark-fill" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+           <g stroke-width="1.0" fill-rule="evenodd">
+            <path stroke="#3483FA" d="M10.977 2.705C11.93 1.618 13.162 1 14.895 1c3.333 0 5.607 2.152 5.607 6.274 0 .08-.002.16-.005.24-.107 2.596-1.876 5.253-4.737 7.892a33.77 33.77 0 0 1-3.165 2.57 32.447 32.447 0 0 1-1.45.983l-.394.243-.394-.243-.009-.005-.021-.014-.08-.05a32.447 32.447 0 0 1-1.34-.914 33.77 33.77 0 0 1-3.165-2.57c-2.86-2.639-4.63-5.296-4.737-7.892A5.839 5.839 0 0 1 1 7.274C1 3.152 3.274 1 6.607 1c1.733 0 2.966.618 3.918 1.705.056.064.137.165.226.282.09-.117.17-.218.226-.282z"></path>
+           </g>
+          </svg>
+          <small class="ui-pdp-bookmark__label">Adicionar aos favoritos</small>
+         </a>
+        </div>
+        <div class="ui-pdp-share">
+         <a class="ui-pdp-share__link" title="Compartilhar" href="https://www.mercadolivre.com.br/share">
+          <svg class="ui-pdp-icon ui-pdp-icon--share" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+           <path fill="#3483FA" fill-rule="evenodd" d="M7.565 11.848a3.002 3.002 0 1 1 0-3.707l4.337-2.173a3.006 3.006 0 0 1 2.9-3.783 3.002 3.002 0 1 1-2.362 4.856L8.102 9.214a3.006 3.006 0 0 1 0 1.562l4.337 2.17a3.002 3.002 0 1 1-.537 1.073l-4.337-2.17zm-2.363-.05a1.802 1.802 0 1 0 0-3.605 1.802 1.802 0 0 0 0 3.604zm9.6 4.802a1.802 1.802 0 1 0 0-3.605 1.802 1.802 0 0 0 0 3.605zm0-9.61a1.802 1.802 0 1 0 0-3.605 1.802 1.802 0 0 0 0 3.605z"></path>
+          </svg>
+          <span class="ui-pdp-share__link__label">Compartilhar</span>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="ui-pdp-container__row ui-pdp-with--separator ui-pdp-with--separator--medium-top">
+       <div class="ui-box-component ui-box-component-pdp__visible--mobile">
+        <h3 class="ui-box-component__title mb-24">Informações sobre o vendedor</h3>
+        <div class="ui-seller-info">
+         <div class="ui-seller-info__status-info">
+          <figure class="ui-seller-info__status-info__icon ui-pdp-color--GRAY">
+           <svg class="ui-pdp-icon ui-pdp-icon--pin ui-pdp-color--GRAY" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+            <path fill-rule="nonzero" d="M6.456 15.227l-.457.536-.457-.536C2.255 11.37.594 8.178.594 5.605a5.405 5.405 0 0 1 10.81 0c0 2.573-1.66 5.765-4.948 9.622zM1.794 5.605c0 2.109 1.392 4.889 4.205 8.3 2.813-3.411 4.205-6.191 4.205-8.3a4.205 4.205 0 0 0-8.41 0zM6 6.8a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4z"></path>
+           </svg>
+          </figure>
+          <div>
+           <h3 class="ui-seller-info__status-info__title">Localização</h3>
+           <p class="ui-seller-info__status-info__subtitle">São Paulo, São Paulo</p>
+          </div>
+         </div>
+         <div class="ui-seller-info__status-info">
+          <figure class="ui-seller-info__status-info__icon ui-pdp-color--GREEN">
+           <svg class="ui-pdp-icon ui-pdp-icon--medal ui-pdp-color--GREEN" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <path fill-opacity=".8" fill-rule="nonzero" d="M15.998 1.92l.848.849-4.093 4.093a5.8 5.8 0 1 1-5.507 0L3.15 2.77 4 1.92l4 4 1.15-1.148L7.144 2.77l.849-.849 2.003 2.004 2.004-2.004.849.849-3.43 3.428a5.869 5.869 0 0 1 2.122.178l4.456-4.455zM10 7.368a4.6 4.6 0 1 0 0 9.199 4.6 4.6 0 0 0 0-9.199z"></path>
+           </svg>
+          </figure>
+          <div>
+           <h3 class="ui-seller-info__status-info__title ui-pdp-seller__status-title">MercadoLíder Gold</h3>
+           <p class="ui-seller-info__status-info__subtitle">É um dos melhores do site</p>
+          </div>
+         </div>
+         <ul class="ui-thermometer" value="5">
+          <li class="ui-thermometer__level ui-thermometer__level--1"></li>
+          <li class="ui-thermometer__level ui-thermometer__level--2"></li>
+          <li class="ui-thermometer__level ui-thermometer__level--3"></li>
+          <li class="ui-thermometer__level ui-thermometer__level--4"></li>
+          
+         </ul>
+         <div class="ui-pdp-seller__reputation-info">
+          <ul class="ui-pdp-seller__list-description">
+           <li class="ui-pdp-seller__item-description">
+            <strong class="ui-pdp-seller__sales-description">345</strong>
+            <p class="ui-pdp-seller__text-description">Vendas nos últimos 60 dias</p>
+           </li>
+           <li class="ui-pdp-seller__item-description">
+            <strong class="ui-pdp-seller__icon-description">
+             <svg class="ui-pdp-icon ui-pdp-icon--message-positive ui-pdp-color--REP_SELLER_ATTENTION_GOOD" viewBox="0 0 29 24" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="evenodd" fill="none">
+               <path d="M6.747 21.511l4.538-3.518h8.238c1.032 0 1.868-.98 1.868-2.19V3.21c0-1.21-.836-2.19-1.868-2.19H3.173c-1.032 0-1.869.98-1.869 2.19v14.077c0 .39.316.706.706.706H5.61v2.96a.706.706 0 0 0 1.138.558z" stroke-width="1.5" stroke="#333"></path>
+               <g transform="translate(14 9)">
+                <circle cx="7.5" cy="7.5" r="7.5" fill="#39B54A"></circle>
+                <g stroke-linecap="round" stroke-width="1.059" stroke="#FFF">
+                 <path d="M3.75 7.5l2.445 2.445M6.25 9.89L11.14 5"></path>
+                </g>
+               </g>
+              </g>
+             </svg>
+            </strong>
+            <p class="ui-pdp-seller__text-description">Presta um bom atendimento</p></li>
+           <li class="ui-pdp-seller__item-description">
+            <strong class="ui-pdp-seller__icon-description">
+             <svg class="ui-pdp-icon ui-pdp-icon--time-positive ui-pdp-color--REP_SELLER_DELIVERY_TIME_GOOD" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="evenodd" fill="none">
+               <g transform="translate(1 .02)" stroke="#333">
+                <ellipse cx="10.5" cy="13.714" rx="10.5" ry="10.286" stroke-width="1.286"></ellipse>
+                <path d="M19.107 13.714h-1.59M3.42 13.714H1.83M10.5 5.143v1.59M10.563 20.571v1.59M10.5.857v2.484M8.75.857h3.637M10.313 8.801v4.944H5.24" stroke-linecap="round" stroke-width="1.102"></path>
+               </g>
+               <g transform="translate(15 10.02)">
+                <circle cx="7.5" cy="7.5" r="7.5" fill="#39B54A"></circle>
+                <g stroke-linecap="round" stroke-width="1.059" stroke="#FFF">
+                 <path d="M3.75 7.5l2.445 2.445M6.25 9.89L11.14 5"></path>
+                </g>
+               </g>
+              </g>
+             </svg>
+            </strong>
+            <p class="ui-pdp-seller__text-description">Entrega os produtos dentro do prazo</p>
+           </li>
+          </ul>
+         </div>
+         <ul class="ui-pdp-seller__list-extra-info"></ul>
+        </div>
+        <a href="http://perfil.mercadolivre.com.br/THE+GAMES_SHOP" class="ui-pdp-action-row ui-box-component__action ui-pdp-action-row--secondary" target="_self">
+         <span class="ui-pdp-action-row__label">Ver mais dados deste vendedor</span>
+         <svg class="ui-pdp-icon ui-pdp-icon--chevron ui-pdp-icon--chevron-right" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
+          <path fill="none" fill-rule="evenodd" stroke-width="1.5" d="M1 1.343L6.657 7 1 12.657"></path>
+         </svg>
+        </a>
+       </div>
+      </div>
+      <div class="ui-pdp-container__row ui-pdp-container__col--text-center ui-pdp-with--separator ui-pdp-with--separator--medium-top">
+       <div class="ui-pdp-other-sellers mt-24">
+        <h2 class="ui-pdp-other-sellers__title">Outras opções de compra</h2>
+        <ul>
+         <li class="ui-pdp-other-sellers-item ui-pdp-other-sellers-item--is-not-ready">
+          <div class="ui-pdp-other-sellers-item__list-top" role="link" tabindex="-1">
+           <div class="ui-pdp-other-sellers-item__price">
+            <div class="ui-pdp-price">
+             <div class="ui-pdp-price__second-line">
+              <span class="price-tag ui-pdp-price__part">
+               <span class="price-tag-symbol">R$</span>
+               <span class="price-tag-fraction">2.169</span>
+              </span>
+             </div>
+            </div>
+           </div>
+           <span class="ui-pdp-other-sellers-item__tag">Melhor preço</span>
+           <svg class="ui-pdp-icon ui-pdp-icon--chevron ui-pdp-other-sellers-item__chevron ui-pdp-icon--chevron-down" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
+            </svg>
+          </div>
+          <ul class="ui-pdp-other-sellers-item__list">
+           <li>
+            <ul class="ui-pdp-summary-list">
+             <li class="ui-pdp-summary-list__item ui-pdp-color--BLACK">
+              <p>
+               12x 
+               <span class="price-tag ui-pdp-price__part">
+                <span class="price-tag-symbol">R$</span>
+                <span class="price-tag-fraction">180</span>
+                <span class="price-tag-decimal-separator">,</span>
+                <span class="price-tag-cents">75</span>
+               </span>
+               <span class="ui-pdp-summary-list__item-icon"></span>
+              </p>
+             </li>
+             <li class="ui-pdp-summary-list__item ui-pdp-color--GREEN">
+              <p>
+               Frete grátis
+               <span class="ui-pdp-summary-list__item-icon"></span>
+              </p>
+             </li>
+            </ul>
+           </li>
+           <li>
+            <div class="ui-pdp-seller ui-pdp-other-sellers-item__seller">
+             <div class="ui-pdp-seller__header">
+              <div class="ui-pdp-seller__header__info-container">
+               <h3 class="ui-pdp-seller__header__title">
+                <span class="ui-pdp-seller__label-sold">Vendido por</span>
+                <div class="ui-pdp-action-modal ui-pdp-seller__link-trigger">
+                 <a class="ui-pdp-action-modal__link" href="">
+                  <span class="ui-pdp-color--BLUE">Marketplacepaybenc</span>
+                 </a>
+                </div>
+               </h3>
+               <p class="ui-pdp-color--BLACK ui-pdp-size--XXSMALL ui-pdp-family--REGULAR ui-pdp-seller__header__subtitle">345 vendas</p>
+              </div>
+             </div>
+            </div>
+           </li>
+           <li class="ui-pdp-other-sellers-item__actions">
+            <form class="ui-pdp-buybox ui-pdp-other-sellers-item__buybox" method="get">
+             <div class="ui-pdp-actions">
+              <div class="ui-pdp-actions__container">
+               <button type="submit" class="andes-button andes-button--medium andes-button--loud" formaction="https://bityli.com/ebTRh">
+                <span class="andes-button__content">Comprar agora</span>
+               </button>
+               <button type="submit" class="andes-button andes-button--medium andes-button--quiet" formaction="https://bityli.com/ebTRh">
+                <span class="andes-button__content">Adicionar ao carrinho</span>
+               </button>
+               <input type="hidden" name="mode" value="page">
+               <input type="hidden" name="item_id" value="MLB1731058104">
+               <input type="hidden" name="context" value="pdp">
+               <input type="hidden" name="parent_url" value="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616">
+              </div>
+             </div>
+            </form>
+           </li>
+          </ul>
+         </li>
+        </ul>
+        <a href="https://bityli.com/ebTRh"><span class="ui-pdp-other-sellers__link">
+         Ver mais opções a partir de 
+         <span class="price-tag ui-pdp-price__part">
+          <span class="price-tag-symbol">R$</span>
+          <span class="price-tag-fraction">2.169</span>
+         </span>
+        </span></a>
+       </div>
+      </div>
+      <div class="ui-pdp-container__row ui-recommendations pdp-mobile-recos ui-pdp-with--separator"></div>
+     </div>
+     <div style="display:contents">
+      <div class="ui-pdp-container__row">
+       <div class="ui-pdp-specs-mobile pl-16 pr-16">
+        <h2 class="ui-pdp-specs-mobile__title">Características principais</h2>
+        <ul class="ui-pdp-features ui-pdp-specs-mobile__features">
+         <li class="ui-pdp-features__item">Inclui controle.</li>
+         <li class="ui-pdp-features__item">Com 3 jogos.</li>
+         <li class="ui-pdp-features__item">Memória RAM de 8GB.</li>
+         <li class="ui-pdp-features__item">Conta com: 1 cabo hdmi, 1 cabo usb, 1 cabo de alimentação, 1 assinatura a playstation plus por 3 meses.</li>
+         <li class="ui-pdp-features__item">Horas de diversão garantidas.</li>
+        </ul>
+        <div class="ui-pdp-see-more ui-pdp-specs-mobile__info">
+         <div class="ui-pdp-see-more__container">
+          <div class="ui-pdp-specs ui-pdp-see-more__content">
+           <div class="ui-pdp-specs__table">
+            <table class="andes-table">
+             <tbody class="andes-table__body">
+              <tr class="andes-table__row" rowspan="">
+               <th class="andes-table__header andes-table__header--left ui-pdp-specs__table__column ui-pdp-specs__table__column-title">Marca</th>
+               <td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column">
+                <span class="andes-table__column--value">Sony</span>
+               </td>
+              </tr>
+              <tr class="andes-table__row" rowspan="">
+               <th class="andes-table__header andes-table__header--left ui-pdp-specs__table__column ui-pdp-specs__table__column-title">Linha</th>
+               <td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column">
+                <span class="andes-table__column--value">PlayStation</span>
+               </td>
+              </tr>
+              <tr class="andes-table__row" rowspan="">
+               <th class="andes-table__header andes-table__header--left ui-pdp-specs__table__column ui-pdp-specs__table__column-title">Modelo</th>
+               <td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column">
+                <span class="andes-table__column--value">PlayStation 4</span>
+               </td>
+              </tr>
+              <tr class="andes-table__row" rowspan="">
+               <th class="andes-table__header andes-table__header--left ui-pdp-specs__table__column ui-pdp-specs__table__column-title">Sub modelo</th>
+               <td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column">
+                <span class="andes-table__column--value">Slim</span>
+               </td>
+              </tr>
+              <tr class="andes-table__row" rowspan="">
+               <th class="andes-table__header andes-table__header--left ui-pdp-specs__table__column ui-pdp-specs__table__column-title">Edição</th>
+               <td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column">
+                <span class="andes-table__column--value">Marvel's Spider-Man/Horizon Zero Dawn Complete Edition/Ratchet &amp; Clank</span>
+               </td>
+              </tr>
+              <tr class="andes-table__row" rowspan="">
+               <th class="andes-table__header andes-table__header--left ui-pdp-specs__table__column ui-pdp-specs__table__column-title">Capacidade</th>
+               <td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column">
+                <span class="andes-table__column--value">1 TB</span>
+               </td>
+              </tr>
+              <tr class="andes-table__row" rowspan="">
+               <th class="andes-table__header andes-table__header--left ui-pdp-specs__table__column ui-pdp-specs__table__column-title">Cor</th>
+               <td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column">
+                <span class="andes-table__column--value">Preto</span>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+         <div class="ui-pdp-action-modal ui-pdp-see-more__action">
+          <a class="ui-pdp-action-modal__link" href="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616/specifications">
+           <span class="ui-pdp-action-row ui-pdp-action-row--secondary" role="button" tabindex="-1">
+            <span class="ui-pdp-action-row__label">Ver mais características</span>
+            <svg class="ui-pdp-icon ui-pdp-icon--chevron ui-pdp-icon--chevron-right" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
+             <path fill="none" fill-rule="evenodd" stroke-width="1.5" d="M1 1.343L6.657 7 1 12.657"></path>
+            </svg>
+           </span>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="ui-pdp-container__row ui-pdp-with--separator">
+       <div class="ui-pdp-collapsable">
+        <div class="ui-pdp-collapsable__container">
+         <div class="ui-pdp-description pl-16 pr-16">
+          <h2 class="ui-pdp-description__title">Descrição</h2>
+          <p class="ui-pdp-description__content">
+           Você não só poderá baixar os melhores videogames e navegar na web sem limites, mas graças à sua interconectividade global, também terá a possibilidade de competir online com seus amigos e com pessoas de todo o mundo desfrutando de aventuras inesquecíveis. 
+           <br>
+           <br>
+           Qualidade de outro nível
+           <br>
+           <br>
+           Você poderá reproduzir música, assistir seus filmes e séries favoritos através dos aplicativos para download. 
+           <br>
+           <br>
+           Desenho inovador
+           <br>
+           <br>
+           Graças às suas pequenas dimensões, o seu consumo de energia é baixo, o que o torna um produto económico e acessível. 
+           <br>
+           Não só isso, o controle DualShock combina recursos revolucionários e sem precedentes, preservando a precisão, conforto e exatidão em cada movimento.
+           <br>
+           <br>
+           Adaptado às suas necessidades
+           <br>
+           Salve as suas aplicações, fotos, vídeos e muito mais no disco rígido, que tem uma capacidade de 1 TB. Ao contar con um processador de 8 núcleos, oferece uma experiência dinâmica, respostas ágeis e transições suaves de imagem HD.
+           <br>
+           <br>
+           Por outro lado, tem uma porta USB e saída HDMI, que permitem conectar acessórios e carregar a bateria do controle enquanto joga.
+           <br>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="ui-pdp-container__row ui-pdp-with--separator pdp-mobile-recos--comparator">
+       <section class="ui-comparator-ref"></section>
+      </div>
+     </div>
+     <div style="display:contents">
+      <div class="ui-pdp-container__row ui-pdp-with--separator">
+       <div class="ui-box-component ui-box-component-pdp__visible--mobile">
+        <h3 class="ui-box-component__title mb-24">Meios de pagamento</h3>
+        <div id="paymentsContainer" class="ui-vip-payment_methods">
+         <a href="https://bityli.com/ebTRh" ui-vip-payment_methods__container="" ui-pdp-background-color--green"&gt;="" <figure="" class="ui-pdp-media__figure">
+           <svg class="ui-pdp-icon ui-pdp-icon--installments ui-pdp-color--CARD ui-pdp-color--WHITE ui-vip-payment_methods__card" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="nonzero" d="M17.8 7.61V5.8a.6.6 0 0 0-.6-.6H2.8a.6.6 0 0 0-.6.6v1.81h15.6zm0 1.2H2.2v5.39a.6.6 0 0 0 .6.6h14.4a.6.6 0 0 0 .6-.6V8.81zM2.8 4h14.4A1.8 1.8 0 0 1 19 5.8v8.4a1.8 1.8 0 0 1-1.8 1.8H2.8A1.8 1.8 0 0 1 1 14.2V5.8A1.8 1.8 0 0 1 2.8 4zm1.195 8.996l.002-1.2 4.204.007-.002 1.2-4.204-.007z"></path>
+           </svg>
+          
+          <h2 class="ui-pdp-media__title ui-pdp-color--WHITE">
+           Pague em 
+           <span class="ui-pdp-color--WHITE ui-pdp-family--SEMIBOLD">até 12x sem juros</span>
+           !
+          </h2>
+         </a>
+         <p class="ui-vip-payment_methods__title">Cartões de crédito</p>
+         <div class="ui-pdp-payment-sprites ui-vip-payment_methods__icons-row">
+          <div class="ui-pdp-payment-sprites__icon-container">
+           <div class="ui-pdp-payment-sprites__icon ui-vip-payment_methods__icon payments-medium _master-medium"></div>
+          </div>
+          <div class="ui-pdp-payment-sprites__icon-container">
+           <div class="ui-pdp-payment-sprites__icon ui-vip-payment_methods__icon payments-medium _hipercard-medium"></div>
+          </div>
+          <div class="ui-pdp-payment-sprites__icon-container">
+           <div class="ui-pdp-payment-sprites__icon ui-vip-payment_methods__icon payments-medium _visa-medium"></div>
+          </div>
+          <div class="ui-pdp-payment-sprites__icon-container">
+           <div class="ui-pdp-payment-sprites__icon ui-vip-payment_methods__icon payments-medium _amex-medium"></div>
+          </div>
+         </div>
+         <p class="ui-vip-payment_methods__title">Cartões de débito</p>
+         <div class="ui-pdp-payment-sprites ui-vip-payment_methods__icons-row">
+          <div class="ui-pdp-payment-sprites__icon-container">
+           <div class="ui-pdp-payment-sprites__icon ui-vip-payment_methods__icon payments-medium _debmaster-medium"></div>
+          </div>
+          <div class="ui-pdp-payment-sprites__icon-container">
+           <div class="ui-pdp-payment-sprites__icon ui-vip-payment_methods__icon payments-medium _debelo-medium"></div>
+          </div>
+         </div>
+         <p class="ui-vip-payment_methods__title">Boleto bancário</p>
+         <div class="ui-pdp-payment-sprites ui-vip-payment_methods__icons-row">
+          <div class="ui-pdp-payment-sprites__icon-container">
+           <div class="ui-pdp-payment-sprites__icon ui-vip-payment_methods__icon payments-medium _bolbradesco-medium"></div>
+          </div>
+         </div>
+        </div>
+        <a href="https://bityli.com/ebTRh" =true"="" class="ui-pdp-action-row ui-box-component__action ui-pdp-action-row--secondary" target="_self">
+         <span class="ui-pdp-action-row__label">Conheça outros meios de pagamento</span>
+         <svg class="ui-pdp-icon ui-pdp-icon--chevron ui-pdp-icon--chevron-right" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
+          <path fill="none" fill-rule="evenodd" stroke-width="1.5" d="M1 1.343L6.657 7 1 12.657"></path>
+         </svg>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div style="display:contents">
+      <div class="ui-pdp-container__row ui-pdp-with--separator">
+       <div class="ui-pdp-qadb pl-16 pr-16">
+        <h2 class="ui-pdp-qadb__title">Perguntas e respostas</h2>
+        <div class="ui-pdp-quick-access__container">
+         <h3 class="ui-pdp-questions__subtitle">Perguntas frequentes</h3>
+         <div class="ui-pdp-questions__list">
+          <a role="button" href="https://www.mercadolivre.com.br/gz/shipping-selector?item_id=MLB1731058383&amp;informative=true" class="andes-button ui-pdp-questions__link andes-button--small andes-button--quiet">
+           <span class="andes-button__content">Custo e prazo de envio</span>
+          </a>
+          <a role="button" href="https://produto.mercadolivre.com.br/noindex/freeReturn/fashion?itemId=MLB1731058383&amp;quantity=1&amp;controlled=true" class="andes-button ui-pdp-questions__link andes-button--small andes-button--quiet">
+           <span class="andes-button__content">Devoluções grátis</span></a>
+          <a role="button" href="https://bityli.com/ebTRh" =true"="" class="andes-button ui-pdp-questions__link andes-button--small andes-button--quiet" &gt;="" <span="">Meios de pagamento
+          </a>
+          <a role="button" href="https://produto.mercadolivre.com.br/noindex/warranty/MLB1731058383?controlled=true" class="andes-button ui-pdp-questions__link andes-button--small andes-button--quiet">
+           <span class="andes-button__content">Garantia</span></a>
+         </div>
+        </div>
+        <div class="ui-pdp-qadb__search-bar">
+         <h3 class="ui-pdp-color--BLACK ui-pdp-size--MEDIUM ui-pdp-family--SEMIBOLD ui-pdp-search-bar__title">Busque o que você quer saber</h3>
+         <form method="GET" action="/p/MLB16261616/qadb?query=&amp;product_id=MLB16261616&amp;item_id=MLB1731058383">
+          <input type="hidden" name="item_id" value="MLB1731058383">
+          <input type="hidden" name="product_id" value="MLB16261616">
+          <div class="ui-pdp-qadb__search-bar__input-container">
+           <label class="andes-form-control andes-form-control--textfield andes-form-control--textbox ui-pdp-qadb__search-bar__input">
+            <div class="andes-form-control__control">
+             
+             <div class="andes-form-control__embedded"> 
+              <!-- --> 
+             </div>
+            </div>
+            <div class="andes-form-control__border"></div>
+            <span class="andes-form-control__message"></span>
+           </label>
+           <button tabindex="-1" type="submit" class="ui-pdp-qadb__search-bar__search">
+            <svg class="ui-pdp-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+             <g fill="#FFF" fill-rule="nonzero">
+              <path d="M7.508 15.015A7.508 7.508 0 1 0 7.508 0a7.508 7.508 0 0 0 0 15.015zm0-1.2a6.308 6.308 0 1 1 0-12.615 6.308 6.308 0 0 1 0 12.615z"></path>
+              <path d="M17.801 16.953L12.6 11.75l-.849.849 5.202 5.201z"></path>
+             </g>
+            </svg>
+           </button>
+          </div>
+         </form>
+        </div>
+        <div class="ui-pdp-qadb__questions-list">
+         <h4 class="ui-pdp-color--BLACK ui-pdp-size--MEDIUM ui-pdp-family--SEMIBOLD ui-pdp-qadb__questions-list__title">Últimas perguntas feitas</h4>
+         <div class="ui-pdp-qadb__questions-list__question">
+          <p class="ui-pdp-color--BLACK ui-pdp-size--SMALL ui-pdp-family--REGULAR ui-pdp-qadb__questions-list__question__label">Olá, boa tarde, ele suporta o hdmi 2.0 ou 2.1?</p>
+          <div class="ui-pdp-qadb__questions-list__question__answer-container">
+           <svg class="ui-pdp-icon ui-pdp-qadb__questions-list__question__answer-container__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+            <path fill="#000" fill-opacity=".25" fill-rule="evenodd" d="M0 0h1v11h11v1H0z"></path>
+           </svg>
+           <div>
+            <div class="ui-pdp-qadb__questions-list__container-answer__isNoCollapsed">
+             <span class="ui-pdp-color--GRAY ui-pdp-size--SMALL ui-pdp-family--REGULAR ui-pdp-qadb__questions-list__answer-item__answer">Suporta</span>
+            </div>
+            <p class="ui-pdp-color--GRAY ui-pdp-size--XSMALL ui-pdp-family--REGULAR ui-pdp-qadb__questions-list__answer-item__answered-by">Respondido por Marketplacepaybenc</p>
+           </div>
+          </div>
+         </div>
+         <span class="ui-pdp-qadb__questions-list__see-more" tabindex="-1" role="button">
+          <p class="ui-pdp-color--BLUE ui-pdp-size--SMALL ui-pdp-family--SEMIBOLD ui-pdp-qadb__questions-list__see-more__link">Ver mais 7 resultados</p>
+          <svg class="ui-pdp-icon ui-pdp-icon--chevron ui-pdp-qadb__questions-list__chevron ui-pdp-icon--chevron-down" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
+           <path fill="none" fill-rule="evenodd" stroke-width="1.5" d="M1 1.343L6.657 7 1 12.657"></path>
+          </svg>
+   </span>
+        </div>
+        <button type="button" class="andes-button ui-pdp-qadb__how-to-make-question-button andes-button--large andes-button--quiet">
+         <span class="andes-button__content">
+          <svg class="ui-pdp-icon ui-pdp-icon--help ui-pdp-qadb__how-to-make-question-button__icon" xmlns="https://api.whatsapp.com/send?phone=5545991460309&amp;text=Quero=" -1="" 36="" 34"="">
+           <path fill-rule="evenodd" d="M17.216 0c8.836 0 16 7.164 16 16s-7.164 16-16 16-16-7.164-16-16 7.164-16 16-16zM17.216 2.133c-7.659 0-13.867 6.208-13.867 13.867s6.208 13.867 13.867 13.867 13.867-6.208 13.867-13.867-6.208-13.867-13.867-13.867zM17.257 21.44c1.013 0 1.867 0.853 1.867 1.867s-0.853 1.867-1.867 1.867c-1.013 0-1.867-0.853-1.867-1.867s0.853-1.867 1.867-1.867zM17.417 6.827c3.36 0 5.413 1.787 5.413 4.187 0 2.213-1.493 3.28-2.827 4.213-1.013 0.747-1.947 1.387-1.947 2.453 0 0.427 0.24 0.907 0.587 1.2l-2.347 0.773c-0.64-0.613-0.96-1.387-0.96-2.267 0-1.787 1.28-2.693 2.427-3.52 0.987-0.693 1.867-1.307 1.867-2.347s-0.8-1.92-2.533-1.92c-1.627 0-2.8 0.747-3.707 1.867l-1.787-2c1.36-1.653 3.413-2.64 5.813-2.64z"></path>
+          </svg>
+          <span class="andes-button__text">Como pergunto ao vendedor?</span>
+         </span>
+        </button>
+       </div>
+      </div>
+      <div class="ui-pdp-container__row">
+       <section class="ui-pdp-reviews">
+        <header class="ui-pdp-reviews__header">
+         <h2 class="ui-pdp-reviews__header__title">Opiniões sobre Sony PlayStation 4 Slim Marvel's Spider-Man/Horizon Zero Dawn Complete Edition/Ratchet &amp; Clank</h2>
+         <div class="ui-pdp-reviews__rating">
+          <div class="ui-pdp-reviews__rating__summary">
+           <h2 class="ui-pdp-reviews__rating__summary__average">5.0</h2>
+           <div class="ui-pdp-reviews__rating__summary__description">
+            <div class="ui-pdp-reviews__rating__summary__rating">
+             <svg class="ui-pdp-reviews__rating__summary__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+              <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+             </svg>
+             <svg class="ui-pdp-reviews__rating__summary__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+              <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+             </svg>
+             <svg class="ui-pdp-reviews__rating__summary__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+              <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+             </svg>
+             <svg class="ui-pdp-reviews__rating__summary__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+              <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+             </svg>
+             <svg class="ui-pdp-reviews__rating__summary__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+              <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+             </svg>
+            </div>
+            <h4 class="ui-pdp-reviews__rating__summary__label">Média entre 6 opiniões</h4>
+           </div>
+          </div>
+          <div class="ui-pdp-reviews__rating__extended"></div>
+         </div>
+        </header>
+        <div class="andes-tabs__container">
+         <div class="andes-tabs__wrapper">
+          <ul class="andes-tabs ui-pdp-reviews__comments" role="tablist">
+           <li class="andes-tab andes-tab--selected" role="tab">
+            <a href="#" class="andes-tab__link" role="tab">Todos</a>
+           </li>
+           <li class="andes-tab" role="tab">
+            <a href="#" class="andes-tab__link" role="tab">Positivas</a>
+           </li>
+           <li class="andes-tab" role="tab">
+            <a href="#" class="andes-tab__link" role="tab">Negativas</a>
+           </li>
+          </ul>
+          <div class="andes-tabs__slider" style="left:0;width:0"></div>
+         </div>
+         <div class="andes-tabs-content ui-pdp-reviews__comments__tab-content">
+          <div class="ui-pdp-reviews__comments__review-comment">
+           <div class="ui-pdp-reviews__comments__review-comment__rating">
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+           </div>
+           <h2 class="ui-pdp-reviews__comments__review-comment__title">MUITO BOM!!!</h2>
+           <p role="presentation" class="ui-pdp-reviews__comments__review-comment line-clamp">Dei de presente para o meu filho e ele está adorando.</p>
+           <div class="ui-pdp-reviews__comments__review-comment__likes">
+            <a href="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616/reviews/90617105?method=like">
+             <svg class="ui-pdp-reviews__comments__review-comment__likes__like" width="20" height="20" viewBox="0 0 20 20">
+              <path fill="#333" fill-rule="nonzero" d="M6.15 5.464l.86-.334L9.576 0l1.017.509a3 3 0 0 1 1.473 3.719l-.286.777h2.8a2.4 2.4 0 0 1 2.243 3.256l-1.205 3.159a4.2 4.2 0 0 1-4.682 2.635l-3.546-.65H6.15v1.2H2v-10.2h4.15v1.06zm0 1.288v5.453h1.294l.108.01 3.6.66a3 3 0 0 0 3.343-1.883L15.7 7.833a1.2 1.2 0 0 0-1.12-1.628h-4.52l.88-2.392a1.8 1.8 0 0 0-.829-2.202l-2.234 4.47-1.728.67zM3.2 13.404h1.75v-7.8H3.2v7.8z"></path>
+             </svg>
+            </a>
+            1
+            <a href="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616/reviews/90617105?method=dislike">
+             <svg class="ui-pdp-reviews__comments__review-comment__likes__dislike" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <path fill="#333" fill-rule="nonzero" d="M6.957 12.536l.861.334L10.383 18l1.017-.509a3 3 0 0 0 1.473-3.719l-.286-.777h2.8a2.4 2.4 0 0 0 2.242-3.256L16.425 6.58a4.2 4.2 0 0 0-4.682-2.635l-3.546.65h-1.24v-1.2h-4.15v10.2h4.15v-1.06zm0-1.288V5.795h1.294l.109-.01 3.6-.66a3 3 0 0 1 3.343 1.883l1.205 3.159a1.2 1.2 0 0 1-1.121 1.628h-4.52l.88 2.392a1.8 1.8 0 0 1-.828 2.202l-2.234-4.47-1.728-.67zm-2.95-6.652h1.75v7.8h-1.75v-7.8z"></path>
+             </svg>
+            </a>
+            0
+           </div>
+          </div>
+          <div class="ui-pdp-reviews__comments__review-comment">
+           <div class="ui-pdp-reviews__comments__review-comment__rating">
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+           </div>
+           <h2 class="ui-pdp-reviews__comments__review-comment__title">Top demais!! </h2>
+           <p role="presentation" class="ui-pdp-reviews__comments__review-comment line-clamp">Tudo certo, o playstation 4 slim 1tb é top!.</p>
+           <div class="ui-pdp-reviews__comments__review-comment__likes">
+            <a href="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616/reviews/87011963?method=like">
+             <svg class="ui-pdp-reviews__comments__review-comment__likes__like" width="20" height="20" viewBox="0 0 20 20">
+              <path fill="#333" fill-rule="nonzero" d="M6.15 5.464l.86-.334L9.576 0l1.017.509a3 3 0 0 1 1.473 3.719l-.286.777h2.8a2.4 2.4 0 0 1 2.243 3.256l-1.205 3.159a4.2 4.2 0 0 1-4.682 2.635l-3.546-.65H6.15v1.2H2v-10.2h4.15v1.06zm0 1.288v5.453h1.294l.108.01 3.6.66a3 3 0 0 0 3.343-1.883L15.7 7.833a1.2 1.2 0 0 0-1.12-1.628h-4.52l.88-2.392a1.8 1.8 0 0 0-.829-2.202l-2.234 4.47-1.728.67zM3.2 13.404h1.75v-7.8H3.2v7.8z"></path>
+             </svg>
+            </a>
+            2
+            <a href="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616/reviews/87011963?method=dislike">
+             <svg class="ui-pdp-reviews__comments__review-comment__likes__dislike" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <path fill="#333" fill-rule="nonzero" d="M6.957 12.536l.861.334L10.383 18l1.017-.509a3 3 0 0 0 1.473-3.719l-.286-.777h2.8a2.4 2.4 0 0 0 2.242-3.256L16.425 6.58a4.2 4.2 0 0 0-4.682-2.635l-3.546.65h-1.24v-1.2h-4.15v10.2h4.15v-1.06zm0-1.288V5.795h1.294l.109-.01 3.6-.66a3 3 0 0 1 3.343 1.883l1.205 3.159a1.2 1.2 0 0 1-1.121 1.628h-4.52l.88 2.392a1.8 1.8 0 0 1-.828 2.202l-2.234-4.47-1.728-.67zm-2.95-6.652h1.75v7.8h-1.75v-7.8z"></path>
+             </svg>
+            </a>
+            0
+           </div>
+          </div>
+          <div class="ui-pdp-reviews__comments__review-comment">
+           <div class="ui-pdp-reviews__comments__review-comment__rating">
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+            <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 10 10">
+             <path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path>
+            </svg>
+           </div>
+           <h2 class="ui-pdp-reviews__comments__review-comment__title">Produto de qualidade muito bom ????</h2>
+           <p role="presentation" class="ui-pdp-reviews__comments__review-comment line-clamp">Show de bola recomendo a todos muito bom.</p>
+           <div class="ui-pdp-reviews__comments__review-comment__likes">
+            <a href="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616/reviews/89585726?method=like">
+             <svg class="ui-pdp-reviews__comments__review-comment__likes__like" width="20" height="20" viewBox="0 0 20 20">
+              <path fill="#333" fill-rule="nonzero" d="M6.15 5.464l.86-.334L9.576 0l1.017.509a3 3 0 0 1 1.473 3.719l-.286.777h2.8a2.4 2.4 0 0 1 2.243 3.256l-1.205 3.159a4.2 4.2 0 0 1-4.682 2.635l-3.546-.65H6.15v1.2H2v-10.2h4.15v1.06zm0 1.288v5.453h1.294l.108.01 3.6.66a3 3 0 0 0 3.343-1.883L15.7 7.833a1.2 1.2 0 0 0-1.12-1.628h-4.52l.88-2.392a1.8 1.8 0 0 0-.829-2.202l-2.234 4.47-1.728.67zM3.2 13.404h1.75v-7.8H3.2v7.8z"></path>
+             </svg>
+            </a>
+            0
+            <a href="https://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616/reviews/89585726?method=dislike">
+             <svg class="ui-pdp-reviews__comments__review-comment__likes__dislike" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <path fill="#333" fill-rule="nonzero" d="M6.957 12.536l.861.334L10.383 18l1.017-.509a3 3 0 0 0 1.473-3.719l-.286-.777h2.8a2.4 2.4 0 0 0 2.242-3.256L16.425 6.58a4.2 4.2 0 0 0-4.682-2.635l-3.546.65h-1.24v-1.2h-4.15v10.2h4.15v-1.06zm0-1.288V5.795h1.294l.109-.01 3.6-.66a3 3 0 0 1 3.343 1.883l1.205 3.159a1.2 1.2 0 0 1-1.121 1.628h-4.52l.88 2.392a1.8 1.8 0 0 1-.828 2.202l-2.234-4.47-1.728-.67zm-2.95-6.652h1.75v7.8h-1.75v-7.8z"></path>
+             </svg>
+            </a>
+            0
+           </div>
+          </div>
+          <a href="https://www.mercadolivre.com.br/noindex/catalog/reviews/MLB16261614?noIndex=true&amp;access=view_all&amp;controlled=true&amp;title=Opini%C3%B5es%20sobre%20Sony%20PlayStation%204%20Slim%20Marvel's%20Spider-Man/Horizon%20Zero%20Dawn%20Complete%20Edition/Ratchet%20&amp;%20Clank" class="ui-pdp-action-row ui-pdp-reviews__comments__button ui-pdp-action-row--secondary" target="_self">
+           <span class="ui-pdp-action-row__label">Ver todas as opiniões</span>
+           <svg class="ui-pdp-icon ui-pdp-icon--chevron ui-pdp-icon--chevron-right" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" fill-rule="evenodd" stroke-width="1.5" d="M1 1.343L6.657 7 1 12.657"></path>
+           </svg>
+          </a>
+         </div>
+        </div>
+       </section>
+      </div>
+     </div>
+    </div>
+    <div class="ui-pdp-container ui-recommendations pdp-mobile-recos-ads">
+     <div style="display:contents"></div>
+    </div>
+    <div style="display:contents">
+     <div class="ui-pdp-container">
+      <div id="ui-fullscreen-ad-pdp" class="container-advertising ui-fullscreen-ad-pdp">
+       <div></div>
+       <div class="banner ui-vpp-advertising ui-fullscreen-ad-pdp banner--hidden">
+        <div class="banner__frame-container ui-vpp-advertising ui-fullscreen-ad-pdp" id="FULLSCREEN_AD"></div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div style="display:contents">
+     <div class="ui-pdp-container__row ui-pdp-container__row--breadcrumb">
+      <div class="ui-pdp-breadcrumb ui-pdp-breadcrumb--compact">
+       <ul class="andes-breadcrumb">
+        <li class="andes-breadcrumb__item">
+         <a class="andes-breadcrumb__link" href="https://games.mercadolivre.com.br/games/" title="Games">Games</a>
+         <div class="andes-breadcrumb__chevron">
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+           <path fill="none" stroke="#666" d="M1 0l4 4-4 4"></path>
+          </svg>
+         </div>
+        </li>
+        <li class="andes-breadcrumb__item">
+         <a class="andes-breadcrumb__link" href="https://games.mercadolivre.com.br/consoles/" title="Consoles">Consoles</a>
+         <div class="andes-breadcrumb__chevron">
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+           <path fill="none" stroke="#666" d="M1 0l4 4-4 4"></path>
+          </svg>
+         </div>
+        </li>
+        <li class="andes-breadcrumb__item">
+         <a class="andes-breadcrumb__link" href="https://games.mercadolivre.com.br/consoles/slim/" title="Slim">Slim</a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="ui-pdp-container__row ui-pdp-container__row--related-reviews">
+      <div class="ui-pdp-related-reviews">
+       <ul class="ui-pdp-related-reviews__list">
+        <li class="ui-pdp-related-reviews__item">Opiniões sobre produtos relacionados</li>
+        <li class="ui-pdp-related-reviews__item">
+         <a class="ui-pdp-related-reviews__link" href="https://www.mercadolivre.com.br/rp/modelos-de-ps3">Modelos de ps3</a>
+        </li>
+        <li class="ui-pdp-related-reviews__item">
+         <a class="ui-pdp-related-reviews__link" href="https://www.mercadolivre.com.br/rp/modelos-de-console">Modelos de console</a>
+        </li>
+        <li class="ui-pdp-related-reviews__item">
+         <a class="ui-pdp-related-reviews__link" href="https://www.mercadolivre.com.br/rp/modelos-de-playstation-4">Modelos de playstation 4</a>
+        </li>
+        <li class="ui-pdp-related-reviews__item">
+         <a class="ui-pdp-related-reviews__link" href="https://www.mercadolivre.com.br/rp/tipos-de-ps3-qual-o-melhor">Tipos de ps3 qual o melhor</a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div style="display:contents"></div>
+    <div style="display:contents"></div>
+   </div>
+  </main>
+  <footer role="contentinfo" class="nav-footer">
+   <div class="nav-footer-downloadapp-banner">
+    <a class="nav-footer-downloadapp" id="footer-applink" href="https://play.google.com/store/apps/details?id=com.mercadolibre&amp;hl=pt_BR">
+     <i class="nav-icon nav-icon-downloadapp"></i>
+     <span>Compre e venda com o app!</span>
+    </a>
+   </div>
+   <div class="nav-footer-mobile-links-bounds">
+    <div class="nav-footer-mobile-links">
+     <a href="https://myaccount.mercadolivre.com.br">Minha conta</a>
+     <a href="https://myaccount.mercadolivre.com.br/purchases/list">Compras</a>
+     <a href="https://www.mercadolivre.com.br/gz/home/navigation">Histórico</a>
+     <a href="https://www.mercadolivre.com.br/ofertas">Ofertas do dia</a>
+     <a href="https://myaccount.mercadolivre.com.br/bookmarks/list">Favoritos</a>
+     <a href="https://www.mercadolivre.com.br/lojas-oficiais">Lojas oficiais</a>
+     <a href="https://www.mercadolivre.com.br/categorias">Categorias</a>
+     <a href="https://www.mercadolivre.com.br/mercadopontos">Mercado Pontos</a>
+     
+     <a href="https://vender.mercadolivre.com.br">Vender</a>
+    </div>
+   </div>
+   <div class="nav-footer-user-info nav-bounds">
+    <p class="nav-footer-user">
+     <a class="nav-footer-login" href="https://www.mercadolivre.com/jms/mlb/lgz/login?platform_id=ML&amp;go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616&amp;loginType=explicit" rel="nofollow">Entre</a>
+     <a class="nav-footer-registration" href="https://www.mercadolivre.com.br/registration?confirmation_url=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616" rel="nofollow">Crie a sua conta</a>
+    </p>
+    <div class="nav-footer-info-wrapper">
+     <div class="nav-footer-primaryinfo">
+      <nav class="nav-footer-navigation nav-footer-navigation--mobile">
+       <a href="https://www.mercadolivre.com.br/ajuda/Termos-e-condicoes-gerais-de-uso_1409">Termos e condições</a>
+       <a href="https://www.mercadolivre.com.br/privacidade">Como cuidamos da sua privacidade</a>
+      </nav>
+      <small style="width:100%" class="nav-footer-copyright"> ©&nbsp;1999-2021 Ebazar.com.br LTDA.</small>
+     </div>
+     <p class="nav-footer-secondaryinfo">CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.</p>
+    </div>
+   </div>
+   <a class="nav-footer-hp" href="https://hp.mercadolibre.com/?p=ML&amp;s=MLB&amp;d=mobile">Mercado Livre</a>
+  </footer>
+  <div role="region" id="cookieDisclaimerBanner" class="nav-cookie-disclaimer">
+   <p class="nav-cookie-disclaimer__text">
+    Ao navegar neste site, você aceita os cookies que usamos para melhorar sua experiência. 
+    <a rel="noopener noreferrer" target="_blank" href="https://www.mercadolivre.com.br/privacidade#tech-and-cookies">Mais informações.</a>
+   </p>
+   <button id="cookieDisclaimerButton" class="nav-cookie-disclaimer__button">Entendi</button>
+  </div>
+  <style>
+.nav-cookie-disclaimer{background:#333;border-top-right-radius:6px;border-top-left-radius:6px;box-shadow:0 1px 2px 0 rgba(0,0,0,.12);padding:16px;position:fixed;bottom:0;left:0;right:0;border:1px solid rgba(0,0,0,.12);z-index:9999}.nav-cookie-disclaimer__text{color:#fff;font-size:16px;margin:0 0 24px;font-weight:400;-webkit-font-smoothing:antialiased;line-height:1.45}.nav-cookie-disclaimer__text a{text-decoration:underline;color:#fff;white-space:nowrap}.nav-cookie-disclaimer__text a:hover{color:#bfbfbf}.nav-cookie-disclaimer__button,.nav-cookie-disclaimer__button:active{font-size:14px;font-weight:600;font-family:inherit;line-height:1.14;overflow:visible;text-transform:none;background-color:#3483fa;color:#fff;margin:0;padding:7px 12px;width:100%;border:1px solid #3483fa;border-radius:6px;cursor:pointer;-webkit-appearance:button}.nav-cookie-disclaimer__button:focus{outline:0;box-shadow:0 0 0 .1875em rgba(30,109,255,.3);-webkit-transition:-webkit-box-shadow .25s ease-in;-o-transition:box-shadow .25s ease-in;transition:box-shadow .25s ease-in}.nav-cookie-disclaimer__button:hover{border-color:transparent;background-color:#2968c8;transition:background-color .2s ease-in;-webkit-transition:background-color .2s ease-in;-o-transition:background-color .2s ease-in}@media (min-width:1024px){.nav-cookie-disclaimer{padding:16px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;align-items:center}.nav-cookie-disclaimer__text{margin:0 16px 0 0}.nav-cookie-disclaimer__button,.nav-cookie-disclaimer__button:active,.nav-cookie-disclaimer__button:focus{width:initial}}
+
+  </style>
+  <script src="">
+(function(w, r) {
+  w[r] = w[r] || function() {
+    (w[r].q = w[r].q || []).push(arguments)
+  }
+})(window,'melidata');
+(function(d,u) {
+  if (!document.getElementById("MelidataIframe")) {
+    var i = d.createElement('iframe');
+    (i.frameElement || i).style.cssText = "width: 0; height: 0; border: 0; position: absolute";
+    i.src = "about:blank";
+    i.id = "MelidataIframe";
+    var t = d.getElementsByTagName('script')[0];
+    t.parentNode.insertBefore(i, t);
+    var doc = i.contentWindow.document;
+    var script = doc.createElement('script');
+    script.text = [
+      'var initMelidata = function(){',
+        'window.inDapIF = true;',
+        'var js = document.createElement(\'script\');',
+        'js.src = \'' + u + '\';',
+        'document.documentElement.appendChild(js);',
+      '};',
+      'setTimeout(initMelidata,0);',
+    ].join('');
+    doc.documentElement.appendChild(script);
+  } else {
+    // This page is charged async via AJAX and inserted into another one who has
+    // already download melidata js lib => Just clean the track
+    melidata("clean");
+  }
+})(document,'https://http2.mlstatic.com/storage/melidata-js-sdk/js/3/0.3.8-hotfix2/melidata.min.js');
+
+melidata("add", "id", "f7fc6356-e141-4f7c-8e57-2ff5f2ce7ebc");
+melidata("add", "server_id", "f7fc6356-e141-4f7c-8e57-2ff5f2ce7ebc" );
+melidata("add", "application", {"version":"0.128.0-rc-2","server_hostname":"i-07b9c76e4e453a633-10.50.31.119","server_poolname":"vpp-frontend-mlb","server_application":"vpp-frontend","sdk_version":{"node_version":"3.8.6"},"business":"mercadolibre","site_id":"MLB"});
+melidata("add", "user", {"uid":"0416bb2d-052f-4ad8-95b3-206df0603c63"});
+melidata("add", "device", {"platform":"/web/mobile","user_agent":"Mozilla/5.0 (Linux; Android 9; Redmi Note 5 Pro Build/PKQ1.180904.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.119 Mobile Safari/537.36"});
+melidata("add", "platform", {"http":{"cookies":{"_d2id":"0416bb2d-052f-4ad8-95b3-206df0603c63-n"},"headers":{"host":"www.mercadolivre.com.br","x-d2id":"0416bb2d-052f-4ad8-95b3-206df0603c63","x-nginx-host":"i-097e3264671e959d9-10.53.188.208","x-platform":"ml","x-device-js":"true"},"http_url":"http://www.mercadolivre.com.br/sony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto/p/MLB16261616"}});
+melidata("add", "experiments", {"search/remove-ecn-tag":"4954","pdp/hideReviewsMobile":"DEFAULT","pdp/unifiedSellerInfo":"5276","pdp/sellerSalesInfo":"3975","mclics/show-carousel-pads-pdp-mobile":"3839","pdp/hideDescriptionMobile":"4951","pdp/performance-improvements":"4219"});
+melidata("add", "experiments_timestamp", "null");
+  </script> 
+  <script src="">
+(function(win, doc){
+  function loadScripts (s) {
+    if (!s || !s.length) return;
+    s = s.slice(0);
+    var h = doc.head || doc.getElementsByTagName('head')[0];
+    var cbStack = {}; var cbChild = {};
+
+    for (var i = 0; i < s.length; i++) {
+      var c = s[i];
+      var t = doc.createElement('script');
+
+      if (typeof c.s === 'function') {
+        t.textContent = '(' + c.s + ').apply(window);';
+      } else {
+        t.async = false;
+        t.defer = true;
+        t.crossOrigin = 'anonymous';
+        if (c.id) t.id = c.id;
+
+        if (c.s) t.src = c.s;
+        var x = t.src;
+        cbStack[x] = [];
+        while(s[i+1] && typeof s[i+1].s === 'function') {
+          cbStack[x].push(s[i+1].s);
+          i++;
+        }
+        if (typeof c.c === 'function') { 
+          cbChild[x] = c.c 
+        } else if (c.c) {
+          t.textContent = c.c;
+        }
+        t.onerror = function(err) {
+          cbStack[err.target.src] && cbStack[err.target.src].forEach(function(cb){ (cb).apply(window) });
+
+          if (typeof meli_ga !== 'undefined') {
+            meli_ga('send', {
+              hitType: 'event',
+              eventCategory: 'FRONTEND-ERROR',
+              eventAction: 'SCRIPT-LOAD-ERROR',
+              eventLabel: err.target.src,
+              nonInteraction: true,
+            });
+          }
+        }
+        t.onload = function(e) {
+          cbChild[e.target.src] && (cbChild[e.target.src]).apply(window);
+          cbStack[e.target.src] && cbStack[e.target.src].forEach(function(cb){ (cb).apply(window) });
+        }
+      }
+      h.appendChild(t);
+    }
+  }
+  loadScripts([{s:function(){window.__NAVIGATION_PRELOADED_STATE__ = {"application":"vpp-frontend","os":"android","siteId":"MLB","domain":"mercadolivre.com.br"};}},{s:function(){"use strict";
+
+function track(options) {
+  if (options.analytics && typeof meli_ga !== 'undefined') {
+    meli_ga('send', {
+      hitType: options.analytics.hitType,
+      eventCategory: options.analytics.category,
+      eventAction: options.analytics.action,
+      eventLabel: options.analytics.label
+    });
+  }
+
+  if (options.melidata && typeof melidata !== 'undefined') {
+    var data = options.melidata.data;
+    melidata('cleanAndSend', options.melidata.type, {
+      path: options.melidata.path,
+      data: data
+    });
+  }
+}
+
+function navigationEventTracking(selector, event, options) {
+  function handleEvent() {
+    track(options);
+  }
+
+  var element = document.querySelector(selector);
+  if (element) element.addEventListener(event, handleEvent);
+}
+
+window.__navigation_tracking__ = navigationEventTracking;
+window.__navigation_track__ = track;}},{s:function(){"use strict";
+
+(function () {
+  window.__navigation_tracking__('#nav-header-menu-download-mobile', 'click', {
+    analytics: {
+      category: "MOBILE-APP-".concat(window.__NAVIGATION_PRELOADED_STATE__.os),
+      action: 'DOWNLOAD-MENU',
+      label: window.__NAVIGATION_PRELOADED_STATE__.application,
+      hitType: 'event'
+    }
+  });
+})();}},{s:function(){"use strict";
+
+(function (doc) {
+  'use strict';
+
+  var header = doc.querySelector('.nav-header');
+  var searchInput = doc.querySelector('.nav-search-input');
+  var searchForm = doc.querySelector('.nav-search');
+  var menuSwitch = doc.getElementById('nav-header-menu-switch');
+  var clearBtn = doc.querySelector('.nav-search-clear-btn');
+  var searchInputHasFocus = false;
+  var searchInputFocusTimer;
+
+  function checkInputText() {
+    clearTimeout(searchInputFocusTimer);
+    searchInputFocusTimer = setTimeout(function () {
+      searchForm.classList[searchInput.value.length && searchInputHasFocus ? 'add' : 'remove']('nav-search--has-text');
+    }, 100);
+  }
+
+  searchInput.addEventListener('focus', function () {
+    header.classList.add('nav-header-has-search-active');
+    header.classList.remove('nav-header--is-leave');
+    menuSwitch.checked = false;
+    searchInputHasFocus = true;
+    checkInputText();
+    setTimeout(function () {
+      header.classList.add('nav-header--is-enter');
+    }, 1);
+  });
+  searchInput.addEventListener('blur', function () {
+    header.classList.remove('nav-header--is-enter');
+    header.classList.add('nav-header--is-leave');
+    searchInputHasFocus = false;
+    checkInputText();
+    setTimeout(function () {
+      if (!searchInputHasFocus) {
+        header.classList.remove('nav-header-has-search-active');
+      }
+    }, 100);
+  });
+  searchInput.addEventListener('input', checkInputText);
+
+  if (clearBtn) {
+    clearBtn.addEventListener('mousedown', function (e) {
+      e.preventDefault();
+      searchInput.value = '';
+      checkInputText();
+      setTimeout(function () {
+        searchInput.focus();
+      }, 50);
+    }, false);
+  }
+})(document);}},{s:function(){"use strict";
+
+(function () {
+  window.__navigation_tracking__('[data-js=cp]', 'click', {
+    analytics: {
+      category: 'CURRENT_LOCATION',
+      action: 'NAVIGATION',
+      label: window.__NAVIGATION_PRELOADED_STATE__.application,
+      hitType: 'event'
+    },
+    melidata: {
+      path: '/current_location/navigation/pick',
+      data: {
+        app: window.__NAVIGATION_PRELOADED_STATE__.application
+      },
+      type: 'event'
+    }
+  });
+})();}},{s:function(){
+          window.requestIdleCallback =
+            window.requestIdleCallback ||
+            function(cb) {
+                var start = Date.now();
+                return setTimeout(function() {
+                    cb({
+                        didTimeout: false,
+                        timeRemaining: function() {
+                            return Math.max(0, 50 - (Date.now() - start));
+                        },
+                    });
+                }, 1);
+            };
+
+          window.cancelIdleCallback =
+            window.cancelIdleCallback ||
+            function(id) {
+                clearTimeout(id);
+            };
+          window.__PRELOADED_STATE__ =
+            {"translations":{"Descripción":[null,"Descrição"],"Ver descripción completa":[null,"Ver descrição completa"]},"site":"ML","siteId":"MLB","lowEnd":false,"deviceType":"mobile","country":{"id":"BR","name":"Brasil","locale":"pt_BR","currency_id":"BRL","decimal_separator":",","thousands_separator":".","time_zone":"GMT-03:00","geo_information":{"location":{"latitude":-23.6821604,"longitude":-46.875494}},"states":[{"id":"BR-AC","name":"Acre"},{"id":"BR-AL","name":"Alagoas"},{"id":"BR-AP","name":"Amapá"},{"id":"BR-AM","name":"Amazonas"},{"id":"BR-BA","name":"Bahia"},{"id":"BR-CE","name":"Ceará"},{"id":"BR-DF","name":"Distrito Federal"},{"id":"BR-ES","name":"Espírito Santo"},{"id":"BR-GO","name":"Goiás"},{"id":"BR-MA","name":"Maranhão"},{"id":"BR-MT","name":"Mato Grosso"},{"id":"BR-MS","name":"Mato Grosso do Sul"},{"id":"BR-MG","name":"Minas Gerais"},{"id":"BR-PR","name":"Paraná"},{"id":"BR-PB","name":"Paraíba"},{"id":"BR-PA","name":"Pará"},{"id":"BR-PE","name":"Pernambuco"},{"id":"BR-PI","name":"Piauí"},{"id":"BR-RN","name":"Rio Grande do Norte"},{"id":"BR-RS","name":"Rio Grande do Sul"},{"id":"BR-RJ","name":"Rio de Janeiro"},{"id":"BR-RO","name":"Rondônia"},{"id":"BR-RR","name":"Roraima"},{"id":"BR-SC","name":"Santa Catarina"},{"id":"BR-SE","name":"Sergipe"},{"id":"BR-SP","name":"São Paulo"},{"id":"BR-TO","name":"Tocantins"}],"currencies":{"BRL":{"id":"BRL","symbol":"R$","description":"Real","decimal_places":2}}},"currentUser":null,"initialState":{"id":"MLB16261616","app":"pdp","components":{"bookmark":{"id":"bookmark","type":"bookmark","state":"VISIBLE","item_id":"MLB1731058383","is_bookmarked":false,"add":{"label":{"text":"Adicionar aos favoritos"},"icon":{"id":"BOOKMARK"},"track":{"melidata_event":{"path":"\u002Fbookmarks\u002Faction\u002Fpost","event_data":{"item_id":"MLB1731058383","catalog_product_id":"MLB16261616","context":"\u002Fpdp"}}}},"delete":{"label":{"text":"Excluir dos favoritos"},"icon":{"id":"BOOKMARK"},"track":{"melidata_event":{"path":"\u002Fbookmarks\u002Faction\u002Fdelete","event_data":{"item_id":"MLB1731058383","catalog_product_id":"MLB16261616","context":"\u002Fpdp"}}}},"isFetching":false},"share":{"id":"share","type":"share","state":"VISIBLE","share_title":{"text":"Compartilhe este produto","color":"BLACK"},"permalink":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616","action":{"label":{"text":"Compartilhar"},"icon":{"id":"SHARE"}},"share_actions":[{"target":"mailto:?subject=Sony%20PlayStation%204%20Slim%201TB%20Marvel%27s%20Spider-Man%2FHorizon%20Zero%20Dawn%20Complete%20Edition%2FRatchet%20%26%20Clank%20preto&body=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616","label":{"text":"E-mail"},"icon":{"id":"MAIL"},"track":{"analytics_event":{"section":"\u002FPDP\u002F","action":"SHARE_MAIL","category":"PDP"}}},{"target":"http:\u002F\u002FTWITTER.com\u002Fshare?text=Olha%20que%20legal%21%20Sony%20PlayStation%204%20Slim%201TB%20Marvel%27s%20Spider-Man%2FHorizon%20Zero%20Dawn%20Complete%20Edition%2FRatchet%20%26%20Clank%20preto&url=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616","label":{"text":"Twitter"},"icon":{"id":"TWITTER"},"track":{"analytics_event":{"section":"\u002FPDP\u002F","action":"SHARE_TWITTER","category":"PDP"}}},{"target":"http:\u002F\u002Fwww.FACEBOOK.com\u002Fsharer.php?u=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616","label":{"text":"Facebook"},"icon":{"id":"FACEBOOK"},"track":{"analytics_event":{"section":"\u002FPDP\u002F","action":"SHARE_FACEBOOK","category":"PDP"}}},{"target":"whatsapp:\u002F\u002Fsend?text=Sony%20PlayStation%204%20Slim%201TB%20Marvel%27s%20Spider-Man%2FHorizon%20Zero%20Dawn%20Complete%20Edition%2FRatchet%20%26%20Clank%20preto%0Ahttps%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616","label":{"text":"WhatsApp"},"icon":{"id":"WHATSAPP"},"track":{"analytics_event":{"section":"\u002FPDP\u002F","action":"SHARE_WHATSAPP","category":"PDP"}}}]},"track":{"melidata_event":{"path":"\u002Fpdp","event_data":{"seller_id":16712557,"seller_name":"THE GAMES_SHOP","reputation_level":"5_green","power_seller_status":"gold","subtitle_types":["MERCADO_LEADER"],"free_shipping":true,"shipping_mode":"me2","local_pick_up":false,"store_pick_up":false,"logistic_type":"xd_drop_off","review_rate":5,"price":2950,"currency_id":"BRL","available_promotions":[],"catalog_parent_id":"MLB16261614","catalog_product_id":"MLB16261616","item_id":"MLB1731058383","category_id":"MLB11172","vertical":"core","domain_id":"MLB-GAME_CONSOLES","item_condition":"new","listing_type_id":"gold_pro","cart_content":true,"shipping_conditions":"free_mandatory","pushing_puis":false,"showing_puis":false,"bo_pick_up_conditions":"no_bo_pick_up","pdp_type":"GREEN_WITH_OFFER","cac_item":true,"cac_status":"normal","qadb_info":[{"question_id":11687041755,"invented":false},{"question_id":11658854498,"invented":false},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true}],"alternative_buying_options":[{"position":1,"item_id":"MLB1731058104","buying_option_id":"CHEAPER","seller_id":16712557,"seller_name":"THE GAMES_SHOP"}]},"experiments":{"search\u002Fremove-ecn-tag":"4954","pdp\u002FhideReviewsMobile":"DEFAULT","pdp\u002FunifiedSellerInfo":"5276","pdp\u002FsellerSalesInfo":"3975","mclics\u002Fshow-carousel-pads-pdp-mobile":"3839","pdp\u002FhideDescriptionMobile":"4951","pdp\u002Fperformance-improvements":"4219"}},"analytics_event":{"section":"\u002FPDP\u002F","custom_dimensions":{"3":"{'MLB1144':'Games'}","4":"{'MLB1144':'Games','MLB11172':'Consoles'}","7":"MARKETPLACE","8":"core","9":"NONE","19":"gold_pro","35":"normal","37":"me2","39":"active","43":"YES","45":"NO","49":"MLB1731058383","51":"new","58":"normal","66":"NO","71":"gold","72":"5_green","73":"NO","85":"YES","86":"MLB-GAME_CONSOLES","106":"NO","111":"NONE","119":"16712557","120":"THE GAMES_SHOP","129":"Sony PlayStation 4 Slim 1TB Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank preto","130":"MLB16261616","132":"free_mandatory"}},"gtm_event":{"pageId":"PDP","vertical":"core","siteId":"MLB","itemId":"MLB1731058383","catalogParentId":"MLB16261614","catalogProductId":"MLB16261616","domainId":"MLB-GAME_CONSOLES","rootCategoryId":"MLB1144","pathToRoot":"MLB1144,MLB11172","categoryId":"MLB11172","reviewRate":5,"brandId":"Sony","cartContent":true,"itemPrice":567.67,"localItemPrice":2950,"currencyId":"BRL","sellerId":16712557,"reputationLevel":"5_green","freeShipping":true},"firebase_event":{"event_name":"view_product","event_data":{"item_id":"MLB1731058383","catalog_product_id":"MLB16261616","catalog_product_name":"Sony PlayStation 4 Slim 1TB Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank preto","vertical":"core","domain_id":"MLB-GAME_CONSOLES","root_category_id":"MLB1144","category_id":"MLB11172"}}},"picture_config":{"template":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_NQ_NP_{id}-O.webp","template_thumbnail":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_Q_NP_{id}-R.webp","template_zoom":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_NQ_NP_{id}-F.webp","template_2x":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_NQ_NP_2X_{id}-F.webp","template_thumbnail_2x":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_Q_NP_2X_{id}-R.webp"},"header":{"id":"header","type":"header","title":"Sony PlayStation 4 Slim 1TB Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank preto","subtitle":"Novo  |  151 vendidos","reviews":{"rating":5,"amount":6,"subtitle":"6 opiniões","action":{"target":"\u002Fnoindex\u002Fcatalog\u002Freviews\u002FMLB16261614?noIndex=true&access=view_all&controlled=true&title=Opini%C3%B5es%20sobre%20Sony%20PlayStation%204%20Slim%20Marvel's%20Spider-Man\u002FHorizon%20Zero%20Dawn%20Complete%20Edition\u002FRatchet%20&%20Clank"},"title":"Opiniões sobre Sony PlayStation 4 Slim Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank","stars":"5"}},"highlights":{"id":"highlights","type":"promotions","state":"HIDDEN"},"gallery":{"id":"gallery","type":"gallery","picture_config":{"template":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_NQ_NP_{id}-O.webp","template_thumbnail":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_Q_NP_2X_{id}-R.webp","template_zoom":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_NQ_NP_2X_{id}-F.webp"},"pictures":[{"id":"912332-MLA44183128109_112020","alt":"Sony PlayStation 4 Slim 1TB Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank preto","width":1048,"height":521},{"id":"852665-MLA44183128110_112020","alt":"Sony PlayStation 4 Slim 1TB Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank preto","width":1091,"height":636}],"show_share":true,"gallery_type":"horizontal","set_paddings":false},"variations":{"id":"variations","type":"variations","state":"HIDDEN"},"price":{"id":"price","type":"price","state":"VISIBLE","price":{"type":"price","value":2950,"currency_symbol":"R$"},"subtitles":[{"text":"{en} 12x {price_installments} sem juros","color":"GREEN","font_size":"MEDIUM","font_family":"REGULAR","values":{"price_installments":{"type":"price","value":245.83,"currency_symbol":"R$"},"en":{"text":"em","color":"BLACK"}}}],"price_tags":[],"action":{"target":"https:\u002F\u002Fproduto.mercadolivre.com.br\u002Fnoindex\u002Fservices\u002FMLB1731058383\u002Fpayments","label":{"text":"Ver os meios de pagamento"},"modal_title":"Meios de pagamento","track":{"melidata_event":{"path":"\u002Fpdp\u002Fpricing_rebates\u002Fmodal_payments_action","event_data":{"item_id":"MLB1731058383","is_cash_price":false,"price":2950,"currency_id":"BRL","installments_value_total":2949.96,"installments_value_each":245.83,"installments_amount":12,"is_free_installments":true}}}}},"no_stock_status":{"id":"no_stock_status","type":"warning_message","state":"HIDDEN"},"promotions":{"id":"promotions","type":"promotions","state":"HIDDEN"},"buy_box_offers":{"id":"buy_box_offers","type":"buy_box_offers","state":"HIDDEN"},"payment_summary":{"id":"payment_summary","type":"generic_summary","state":"HIDDEN","styles":{"sprite_css":".payments-small { background: url(https:\u002F\u002Fhttp2.mlstatic.com\u002Fsecure\u002Fpayment-logos\u002Fv2\u002Fpayment-logos-mlb-small_v_b7642bed7b.png) no-repeat; }","picture_css":"._boleto-small,._bolbradesco-small{width:28px;height:18px;background-position:left 0;}._account_money-small{width:28px;height:20px;background-position:left -20px;}._giftcard-small{width:89px;height:19px;background-position:left -42px;}._itau-small{width:34px;height:19px;background-position:left -63px;}._consumer_credits-small{width:74px;height:19px;background-position:left -84px;}._elo-small{width:31px;height:19px;background-position:left -105px;}._diners-small{width:70px;height:18px;background-position:left -126px;}._amex-small{width:22px;height:19px;background-position:left -146px;}._melicard-small{width:27px;height:19px;background-position:left -167px;}._master-small{width:26px;height:20px;background-position:left -188px;}._debmaster-small{width:40px;height:20px;background-position:left -210px;}._hipercard-small{width:42px;height:18px;background-position:left -232px;}._visa-small{width:34px;height:11px;background-position:left -252px;}._debvisa-small{width:70px;height:15px;background-position:left -265px;}._pec-small{width:66px;height:20px;background-position:left -282px;}._paypal-small{width:15px;height:18px;background-position:left -304px;}._debelo-small{width:66px;height:15px;background-position:left -324px;}"}},"shipping_summary":{"id":"shipping_summary","type":"generic_summary","state":"VISIBLE","title":{"text":"Frete grátis","color":"GREEN"},"icon":{"id":"TRUCK","color":"GREEN"},"subtitles":[{"text":"Saiba os prazos de entrega e as formas de envio.","color":"GRAY"}],"action":{"target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fnavigation\u002Faddresses-hub?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto%2Fp%2FMLB16261616","label":{"text":"Calcular o prazo de entrega"},"icon":{"id":"LOCATION","color":"BLUE"}}},"pick_up_summary":{"id":"pick_up_summary","type":"generic_summary","state":"HIDDEN","benefit_type":"NONE"},"seller":{"id":"seller","type":"seller","state":"VISIBLE","title":"Vendido por","title_value":"THE GAMES_SHOP","seller_link":{"label":{"text":"THE GAMES_SHOP","color":"BLUE"}},"subtitles":[{"text":"MercadoLíder {font} 345 vendas","color":"BLACK","font_size":"XSMALL","font_family":"REGULAR","values":{"font":{"text":"|","color":"GRAY","font_size":"XSMALL","font_family":"REGULAR"}}}],"seller":{"id":16712557,"name":"THE GAMES_SHOP","reputation_level":"5_green"},"seller_info":{"state":"VISIBLE","header":"Informação do vendedor","title":"THE GAMES_SHOP","subtitles":[],"power_seller_status":{"title":"MercadoLíder Gold","subtitle":"É um dos melhores do site!"},"store_type":"CLASSIC","thermometer":{"rank":5,"info":[{"title":"345","subtitle":"Vendas nos últimos 60 dias"},{"icon":{"id":"REP_SELLER_ATTENTION_GOOD"},"subtitle":"Presta um bom atendimento"},{"icon":{"id":"REP_SELLER_DELIVERY_TIME_GOOD"},"subtitle":"Entrega os produtos dentro do prazo"}]},"extra_info":[{"icon":{"id":"LOCATION","color":"GRAY"},"title":"Localização","subtitle":"São Paulo, São Paulo"}]},"show_seller_logo":false,"url":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Fseller-info"},"stock_information":{"id":"stock_information","type":"warning_message","state":"HIDDEN"},"available_quantity":{"id":"available_quantity","type":"label_component","state":"VISIBLE","picker":{"selected":1},"label":{"text":"Último disponível!","color":"BLACK","font_size":"MEDIUM","font_family":"SEMIBOLD"}},"main_actions":{"id":"main_actions","type":"main_actions","state":"VISIBLE","form":{"mode":"page","item_id":"MLB1731058383","context":"pdp"},"actions":[{"type":"primary","target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fgz\u002Fcheckout\u002Fbuy","label":{"text":"Comprar agora"},"track":{"melidata_event":{"path":"\u002Fpdp\u002Fbuy_action","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","vertical":"core","domain_id":"MLB-GAME_CONSOLES","review_rate":5,"item_condition":"new","listing_type_id":"gold_pro","cart_content":true,"price":2950,"currency_id":"BRL","available_promotions":[],"seller_id":16712557,"seller_name":"THE GAMES_SHOP","reputation_level":"5_green","power_seller_status":"gold","free_shipping":true,"shipping_mode":"me2","local_pick_up":false,"store_pick_up":false,"logistic_type":"xd_drop_off","shipping_conditions":"free_mandatory","pushing_puis":false,"showing_puis":false,"bo_pick_up_conditions":"no_bo_pick_up","pdp_type":"GREEN_WITH_OFFER","credits_opensea":false}},"analytics_event":{"section":"\u002FPDP\u002F","action":"BUY-INTENTION","category":"PDP","label":"MAIN_ACTION"}},"disabled":false,"should_raise_errors":false,"action_type":"BUY_NOW"},{"type":"secondary","target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fgz\u002Fcart\u002Fitem\u002Fadd","label":{"text":"Adicionar ao carrinho"},"track":{"melidata_event":{"path":"\u002Fpdp\u002Fadd_to_cart_action","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","vertical":"core","domain_id":"MLB-GAME_CONSOLES","review_rate":5,"item_condition":"new","listing_type_id":"gold_pro","cart_content":true,"price":2950,"currency_id":"BRL","available_promotions":[],"seller_id":16712557,"seller_name":"THE GAMES_SHOP","reputation_level":"5_green","power_seller_status":"gold","free_shipping":true,"shipping_mode":"me2","local_pick_up":false,"store_pick_up":false,"logistic_type":"xd_drop_off","shipping_conditions":"free_mandatory","pushing_puis":false,"showing_puis":false,"bo_pick_up_conditions":"no_bo_pick_up","pdp_type":"GREEN_WITH_OFFER","credits_opensea":false}},"analytics_event":{"section":"\u002FPDP\u002F","action":"ADD-TO-CART","category":"PDP","label":"MAIN_ACTION"}},"disabled":false,"should_raise_errors":false,"action_type":"ADD_TO_CART"}]},"paypal_tooltip":{"id":"paypal_tooltip","type":"tooltip","state":"HIDDEN","closeable":false,"closed":false,"storable":false,"has_shadow":false,"change_color":false},"shipping_cart_benefits_tooltip":{"id":"shipping_cart_benefits_tooltip","type":"tooltip","state":"HIDDEN","closeable":false,"closed":false,"storable":false,"has_shadow":false,"change_color":false},"credits_tooltip":{"id":"credits_tooltip","type":"tooltip","state":"HIDDEN","closeable":false,"closed":false,"storable":false,"has_shadow":false,"change_color":false},"buy_benefits":{"id":"buy_benefits","type":"buy_benefits","state":"VISIBLE","benefits":[{"text":"{action} Você tem 7 dias a partir da data de recebimento.","icon":{"id":"RETURNS","color":"GRAY"},"values":{"action":{"type":"action","target":"https:\u002F\u002Fproduto.mercadolivre.com.br\u002Fnoindex\u002FfreeReturn\u002Ffashion?itemId=MLB1731058383&quantity=1","label":{"text":"Devolução grátis."}}}},{"text":"{action}, receba o produto que está esperando ou devolvemos o dinheiro.","icon":{"id":"PROTECTED_BUY","color":"GRAY"},"values":{"action":{"type":"action","target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fcompra-garantida","html_target":"_blank","label":{"text":"Compra Garantida"}}}},{"text":"{action}. Você acumula 983 pontos.","icon":{"id":"LOYALTY_POINTS","color":"GRAY"},"values":{"action":{"type":"action","target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fmercado-pontos","html_target":"_blank","label":{"text":"Mercado Pontos"}}}},{"text":"1 anos de garantia de fábrica.","icon":{"id":"WARRANTY","color":"GRAY"}}]},"others_products":{"id":"others_products","type":"others_products","state":"HIDDEN","products":[{"title":{"text":"17 produtos novos a partir de {price}","color":"BLACK","values":{"price":{"type":"price","value":2899,"currency_symbol":"R$"}}},"action":{"target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Fs","track":{"melidata_event":{"path":"\u002Fpdp\u002Fother_buying_options","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","item_condition":"new","listing_type_id":"gold_pro","domain_id":"MLB-GAME_CONSOLES","product_status":"active","seller_id":16712557,"seller_name":"THE GAMES_SHOP","context":"other_products_new"}},"analytics_event":{"section":"\u002FPDP\u002F","action":"OTHER_BUYING_OPTIONS","category":"PDP","label":"other_products_new"}}}}]},"grouped_share_bookmark":{"id":"grouped_share_bookmark","type":"grouped_share_bookmark","state":"VISIBLE","components":["bookmark","share"]},"bbw_alternatives":{"id":"bbw_alternatives","type":"bbw_alternatives","state":"VISIBLE","title":{"text":"Outras opções de compra","color":"BLACK"},"action":{"target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Fs","label":{"text":"Ver mais opções a partir de {price}","values":{"price":{"type":"price","value":2899,"currency_symbol":"R$"}}},"track":{"melidata_event":{"path":"\u002Fpdp\u002Fother_buying_options","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","item_condition":"new","listing_type_id":"gold_pro","domain_id":"MLB-GAME_CONSOLES","product_status":"active","seller_id":16712557,"seller_name":"THE GAMES_SHOP","context":"alternatives"}},"analytics_event":{"section":"\u002FPDP\u002F","action":"OTHER_BUYING_OPTIONS","category":"PDP","label":"alternatives"}}},"items":[{"id":"MLB1731058104","collapsed":false,"product_tag":{"text":"Melhor preço"},"seller":{"id":"seller","type":"seller","state":"VISIBLE","title":"Vendido por","title_value":"THE GAMES_SHOP","seller_link":{"label":{"text":"THE GAMES_SHOP","color":"BLUE"}},"subtitles":[{"text":"345 vendas","color":"BLACK","font_size":"XXSMALL","font_family":"REGULAR"}],"seller":{"id":16712557,"name":"THE GAMES_SHOP","reputation_level":"5_green"},"seller_info":{"state":"VISIBLE","header":"Informação do vendedor","title":"THE GAMES_SHOP","subtitles":[],"power_seller_status":{"title":"MercadoLíder Gold","subtitle":"É um dos melhores do site!"},"store_type":"CLASSIC","thermometer":{"rank":5,"info":[{"title":"345","subtitle":"Vendas nos últimos 60 dias"},{"icon":{"id":"REP_SELLER_ATTENTION_GOOD"},"subtitle":"Presta um bom atendimento"},{"icon":{"id":"REP_SELLER_DELIVERY_TIME_GOOD"},"subtitle":"Entrega os produtos dentro do prazo"}]},"extra_info":[{"icon":{"id":"LOCATION","color":"GRAY"},"title":"Localização","subtitle":"São Paulo, São Paulo"}]},"show_seller_logo":false},"price":{"id":"price","type":"price","state":"VISIBLE","price":{"type":"price","value":2899,"currency_symbol":"R$"},"subtitles":[]},"main_actions":{"id":"main_actions","type":"main_actions","state":"VISIBLE","form":{"mode":"page","item_id":"MLB1731058104","context":"pdp"},"actions":[{"type":"primary","target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fgz\u002Fcheckout\u002Fbuy","label":{"text":"Comprar agora"},"track":{"melidata_event":{"path":"\u002Fpdp\u002Falternative_buying_options\u002Fbuy_action","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058104","seller_id":16712557,"seller_name":"THE GAMES_SHOP","position":1,"buying_option_id":"CHEAPER"}},"analytics_event":{"section":"\u002FPDP\u002F","action":"BUY-INTENTION","category":"PDP","label":"CHEAPER-1-MLB1731058104","custom_dimensions":{"119":"16712557","120":"THE GAMES_SHOP"}}},"disabled":false,"should_raise_errors":false,"action_type":"BUY_NOW"},{"type":"secondary","target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fgz\u002Fcart\u002Fitem\u002Fadd","label":{"text":"Adicionar ao carrinho"},"track":{"melidata_event":{"path":"\u002Fpdp\u002Falternative_buying_options\u002Fadd_to_cart_action","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058104","seller_id":16712557,"seller_name":"THE GAMES_SHOP","position":1,"buying_option_id":"CHEAPER"}},"analytics_event":{"section":"\u002FPDP\u002F","action":"ADD-TO-CART","category":"PDP","label":"CHEAPER-1-MLB1731058104","custom_dimensions":{"119":"16712557","120":"THE GAMES_SHOP"}}},"disabled":false,"should_raise_errors":false,"action_type":"ADD_TO_CART"}]},"summary_list":{"id":"summary_list","type":"summary_list","list":[{"id":"payment_summary","type":"generic_summary","state":"VISIBLE","title":{"text":"12x {price_installments}","color":"BLACK","values":{"price_installments":{"type":"price","value":275.38,"currency_symbol":"R$"}}}},{"id":"shipping_summary","type":"generic_summary","state":"VISIBLE","title":{"text":"Frete grátis","color":"GREEN"}},{"id":"pick_up_summary","type":"generic_summary","state":"HIDDEN","benefit_type":"NONE"}],"bullet":"•"}}]},"seller_info":{"id":"seller_info","type":"seller_info","state":"VISIBLE","header":"Informações sobre o vendedor","subtitles":[],"seller_status_info":[{"icon":{"id":"LOCATION","color":"GRAY"},"title":{"text":"Localização","color":"BLACK"},"subtitle":{"text":"São Paulo, São Paulo"}},{"icon":{"id":"MEDAL","color":"GREEN"},"title":{"text":"MercadoLíder Gold","color":"GREEN"},"subtitle":{"text":"É um dos melhores do site!"}}],"thermometer":{"rank":5,"info":[{"title":"345","subtitle":"Vendas nos últimos 60 dias"},{"icon":{"id":"REP_SELLER_ATTENTION_GOOD"},"subtitle":"Presta um bom atendimento"},{"icon":{"id":"REP_SELLER_DELIVERY_TIME_GOOD"},"subtitle":"Entrega os produtos dentro do prazo"}]},"extra_info":[],"action":{"target":"http:\u002F\u002Fperfil.mercadolivre.com.br\u002FTHE+GAMES_SHOP","label":{"text":"Ver mais dados deste vendedor"}}},"all_features":{"id":"all_features","type":"all_features","state":"VISIBLE","main_features":{"title":"Características principais","type":"LIST","attributes":["Inclui controle.","Com 3  jogos.","Memória RAM de 8GB.","Conta com: 1 cabo hdmi, 1 cabo usb, 1 cabo de alimentação, 1 assinatura a playstation plus por 3 meses.","Horas de diversão garantidas."]},"specs":[{"title":"Informações do produto","type":"STRIPED","column":"LEFT","attributes":[{"id":"Marca","text":"Sony"},{"id":"Linha","text":"PlayStation"},{"id":"Modelo","text":"PlayStation 4"},{"id":"Sub modelo","text":"Slim"},{"id":"Edição","text":"Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank"},{"id":"Capacidade","text":"1 TB"},{"id":"Cor","text":"Preto"}]},{"title":"Outras características","type":"LIST","column":"RIGHT","attributes":[{"text":"{value_text}: Sim","values":{"value_text":{"text":"Com Wi-Fi","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: De mesa","values":{"value_text":{"text":"Tipo de console","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: Sim","values":{"value_text":{"text":"Inclui controles","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: 1","values":{"value_text":{"text":"Quantidade de controles incluídos","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: Sem fio","values":{"value_text":{"text":"Conectividade dos controles","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: 8 GB","values":{"value_text":{"text":"Memória RAM","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: GDDR5","values":{"value_text":{"text":"Tipos de memória","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: AMD Jaguar","values":{"value_text":{"text":"CPU","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: 8","values":{"value_text":{"text":"Quantidade de núcleos de CPU","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: AMD Radeon","values":{"value_text":{"text":"GPU","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: Blu-ray, Digital","values":{"value_text":{"text":"Formatos de jogos","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: Sim","values":{"value_text":{"text":"Com HDMI","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: Sim","values":{"value_text":{"text":"Com USB","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: Sim","values":{"value_text":{"text":"Com Bluetooth","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: 1 cabo HDMI, 1 cabo USB, 1 cabo de alimentação, 1 assinatura a PlayStation Plus por 3 meses","values":{"value_text":{"text":"Acessórios incluídos","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: Sim","values":{"value_text":{"text":"Inclui jogos","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: 3","values":{"value_text":{"text":"Quantidade de jogos incluídos","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: Marvel's Spider-Man, Horizon Zero Dawn Complete Edition, Ratchet & Clank","values":{"value_text":{"text":"Títulos de jogos incluídos","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: 2.1 kg","values":{"value_text":{"text":"Peso","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}},{"text":"{value_text}: 39 mm x 265 mm x 288 mm","values":{"value_text":{"text":"Altura x Largura x Profundidade","color":"BLACK","font_size":"XSMALL","font_family":"BOLD"}}}]}],"action":{"target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Fspecifications","label":{"text":"Ver mais características","color":"BLUE"},"track":{"melidata_event":{"path":"\u002Fpdp\u002Ftechnical_specs\u002Fview_more","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","category_id":"MLB11172","domain_id":"MLB-GAME_CONSOLES","seller_id":16712557,"is_highlighted":false}}}},"viewport_track":{"melidata_event":{"path":"\u002Fpdp\u002Ftechnical_specs\u002Fshow","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","category_id":"MLB11172","domain_id":"MLB-GAME_CONSOLES","seller_id":16712557,"is_highlighted":false}}}},"highlighted_specs_attrs":{"id":"highlighted_specs_attrs","type":"highlighted_specs","state":"HIDDEN"},"description":{"id":"description","type":"description","state":"VISIBLE","title":"Descrição","content":"Você não só poderá baixar os melhores videogames e navegar na web sem limites, mas graças à sua interconectividade global, também terá a possibilidade de competir online com seus amigos e com pessoas de todo o mundo desfrutando de aventuras inesquecíveis. \n\nQualidade de outro nível\n\nVocê poderá reproduzir música, assistir seus filmes e séries favoritos através dos aplicativos para download. \n\nDesenho inovador\n\nGraças às suas pequenas dimensões, o seu consumo de energia é baixo, o que o torna um produto económico e acessível. \nNão só isso, o controle DualShock combina recursos revolucionários e sem precedentes, preservando a precisão, conforto e exatidão em cada movimento.\n\nAdaptado às suas necessidades\nSalve as suas aplicações, fotos, vídeos e muito mais no disco rígido, que tem uma capacidade de 1 TB. Ao contar con um processador de 8 núcleos, oferece uma experiência dinâmica, respostas ágeis e transições suaves de imagem HD.\n\nPor outro lado, tem uma porta USB e saída HDMI, que permitem conectar acessórios e carregar a bateria do controle enquanto joga.","max_pages":1.5,"action":{"label":{"text":"Ver descrição completa"},"target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Fdescription"},"show_track":{"melidata_event":{"path":"\u002Fpdp\u002Fdescription\u002Fshow","event_data":{"catalog_product_id":"MLB16261616"}}}},"highlighted_specs_features":{"id":"highlighted_specs_features","type":"highlighted_specs","state":"HIDDEN"},"payment_methods":{"id":"payment_methods","type":"payment_methods","state":"VISIBLE","header":"Meios de pagamento","messages":[{"state":"VISIBLE","title":{"text":"Pague em {installments}!","color":"WHITE","values":{"installments":{"text":"até 12x sem juros","color":"WHITE","font_family":"SEMIBOLD"}}},"icon":{"id":"CARD","color":"WHITE"},"background_color":"GREEN","closeable":false,"action":{"target":"https:\u002F\u002Fproduto.mercadolivre.com.br\u002Fnoindex\u002Fservices\u002FMLB1731058383\u002Fpayments?controlled=true","label":{"text":"Conheça outros meios de pagamento"},"modal_title":"Meios de pagamento"}}],"payment_methods":[{"title":{"text":"Cartões de crédito"},"icons":[{"id":"master","size":"medium","url":{"src":"https:\u002F\u002Fhttp2.mlstatic.com\u002Fsecure\u002Fpayment-logos\u002Fv2\u002Fpayment-logo-mlb-master-medium_v_b7642bed7b.png"},"width":33,"height":25},{"id":"hipercard","size":"medium","url":{"src":"https:\u002F\u002Fhttp2.mlstatic.com\u002Fsecure\u002Fpayment-logos\u002Fv2\u002Fpayment-logo-mlb-hipercard-medium_v_b7642bed7b.png"},"width":45,"height":20},{"id":"visa","size":"medium","url":{"src":"https:\u002F\u002Fhttp2.mlstatic.com\u002Fsecure\u002Fpayment-logos\u002Fv2\u002Fpayment-logo-mlb-visa-medium_v_b7642bed7b.png"},"width":45,"height":14},{"id":"amex","size":"medium","url":{"src":"https:\u002F\u002Fhttp2.mlstatic.com\u002Fsecure\u002Fpayment-logos\u002Fv2\u002Fpayment-logo-mlb-amex-medium_v_b7642bed7b.png"},"width":24,"height":24}]},{"title":{"text":"Cartões de débito"},"icons":[{"id":"debmaster","size":"medium","url":{"src":"https:\u002F\u002Fhttp2.mlstatic.com\u002Fsecure\u002Fpayment-logos\u002Fv2\u002Fpayment-logo-mlb-debmaster-medium_v_b7642bed7b.png"},"width":53,"height":25},{"id":"debelo","size":"medium","url":{"src":"https:\u002F\u002Fhttp2.mlstatic.com\u002Fsecure\u002Fpayment-logos\u002Fv2\u002Fpayment-logo-mlb-debelo-medium_v_b7642bed7b.png"},"width":75,"height":17}]},{"title":{"text":"Boleto bancário"},"icons":[{"id":"bolbradesco","size":"medium","url":{"src":"https:\u002F\u002Fhttp2.mlstatic.com\u002Fsecure\u002Fpayment-logos\u002Fv2\u002Fpayment-logo-mlb-bolbradesco-medium_v_b7642bed7b.png"},"width":33,"height":21}]}],"action":{"target":"https:\u002F\u002Fproduto.mercadolivre.com.br\u002Fnoindex\u002Fservices\u002FMLB1731058383\u002Fpayments?controlled=true","label":{"text":"Conheça outros meios de pagamento"},"modal_title":"Meios de pagamento"},"stylesMedium":{"sprite_css":".payments-medium { background: url(https:\u002F\u002Fhttp2.mlstatic.com\u002Fsecure\u002Fpayment-logos\u002Fv2\u002Fpayment-logos-mlb-medium_v_b7642bed7b.png) no-repeat; }","picture_css":"._boleto-medium,._bolbradesco-medium{width:33px;height:21px;background-position:left 0;}._account_money-medium{width:31px;height:22px;background-position:left -23px;}._giftcard-medium{width:94px;height:22px;background-position:left -47px;}._itau-medium{width:33px;height:21px;background-position:left -71px;}._consumer_credits-medium{width:89px;height:23px;background-position:left -94px;}._elo-medium{width:40px;height:24px;background-position:left -119px;}._diners-medium{width:85px;height:22px;background-position:left -145px;}._amex-medium{width:24px;height:24px;background-position:left -169px;}._melicard-medium{width:32px;height:22px;background-position:left -195px;}._master-medium{width:33px;height:25px;background-position:left -219px;}._debmaster-medium{width:53px;height:25px;background-position:left -246px;}._hipercard-medium{width:45px;height:20px;background-position:left -273px;}._visa-medium{width:45px;height:14px;background-position:left -295px;}._debvisa-medium{width:87px;height:18px;background-position:left -311px;}._pec-medium{width:76px;height:23px;background-position:left -331px;}._paypal-medium{width:19px;height:22px;background-position:left -356px;}._debelo-medium{width:75px;height:17px;background-position:left -380px;}"}},"qadb":{"id":"qadb","type":"qadb","state":"VISIBLE","qadb_data":{"title":"Perguntas e respostas","components":[{"id":"QUICK_ACTIONS","state":"VISIBLE","offline_state":"HIDDEN","quick_access":{"title":{"text":"Perguntas frequentes"},"actions":[{"target":"  https:\u002F\u002Fwww.mercadolivre.com.br\u002Fgz\u002Fshipping-selector?item_id=MLB1731058383&informative=true","label":{"text":"Custo e prazo de envio"},"track":{"melidata_event":{"path":"\u002Fpdp\u002Fquestions\u002Fquick_access","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","domain_id":"MLB-GAME_CONSOLES","context":"\u002Fqadb","type":"shipping"}}}},{"target":"https:\u002F\u002Fproduto.mercadolivre.com.br\u002Fnoindex\u002FfreeReturn\u002Ffashion?itemId=MLB1731058383&quantity=1&controlled=true","label":{"text":"Devoluções grátis"},"modal_title":"Devoluções grátis","track":{"melidata_event":{"path":"\u002Fpdp\u002Fquestions\u002Fquick_access","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","domain_id":"MLB-GAME_CONSOLES","context":"\u002Fqadb","type":"returns"}}}},{"target":"https:\u002F\u002Fproduto.mercadolivre.com.br\u002Fnoindex\u002Fservices\u002FMLB1731058383\u002Fpayments?controlled=true","label":{"text":"Meios de pagamento"},"modal_title":"Meios de pagamento","track":{"melidata_event":{"path":"\u002Fpdp\u002Fquestions\u002Fquick_access","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","domain_id":"MLB-GAME_CONSOLES","context":"\u002Fqadb","type":"payment"}}}},{"target":"https:\u002F\u002Fproduto.mercadolivre.com.br\u002Fnoindex\u002Fwarranty\u002FMLB1731058383?controlled=true","label":{"text":"Garantia"},"modal_title":"Garantia","track":{"melidata_event":{"path":"\u002Fpdp\u002Fquestions\u002Fquick_access","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","domain_id":"MLB-GAME_CONSOLES","context":"\u002Fqadb","type":"warranty"}}}}]}},{"id":"SEARCH_BAR","state":"VISIBLE","offline_state":"VISIBLE","title":"Busque o que você quer saber","placeholder":"Digite uma pergunta ou palavra-chave...","autosuggest_label_while_loading":"Pesquisar “%s”","track":{"melidata_event":{"path":"\u002Fquestions\u002Fqadb\u002Finput_focus","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","context":"PDP"}},"analytics_event":{"section":"QADB","action":"INPUT_FOCUS","category":"QADB"}},"item_id":"MLB1731058383","site_id":"MLB","product_id":"MLB16261616"},{"id":"RESULTS","state":"VISIBLE","offline_state":"HIDDEN","components":[{"id":"QUESTIONS","state":"VISIBLE","offline_state":"HIDDEN","questions":[{"site":"MLB","product_id":"MLB16261616","product_parent_id":"MLB16261614","item_id":"MLB1731058383","question_id":11687041755,"question_date":"2021-01-01T21:28:45Z","question":{"text":"Olá, boa tarde, ele suporta o hdmi 2.0 ou 2.1?","highlights":[]},"answers":[{"text":"Suporta","answered_by":16712557,"answered_by_text":"Respondido por THE GAMES_SHOP","highlights":[]}],"origin":"PDP"},{"site":"MLB","product_id":"MLB16261616","product_parent_id":"MLB16261614","item_id":"MLB1691081588","question_id":11658854498,"question_date":"2020-12-14T19:11:05Z","question":{"text":"Os jogos são em midia física?","highlights":[]},"answers":[{"text":"Boa Tarde, VINICIUSTEODORO. Formatos de jogos: Blu-ray Agradeço o seu contato e fico à total disposição para futuras dúvidas. Abraços, Fabiana Barros","answered_by":20703080,"answered_by_text":"Respondido por WEBFONESOFICIAL","highlights":[]}],"origin":"ITEM"},{"site":"MLB","question":{"text":"Capacidade?","highlights":[]},"answers":[{"text":"1 TB","answered_by_text":"Respondido pelo Mercado Livre"}],"origin":"INVENTED"},{"site":"MLB","question":{"text":"Cor?","highlights":[]},"answers":[{"text":"Preto","answered_by_text":"Respondido pelo Mercado Livre"}],"origin":"INVENTED"},{"site":"MLB","question":{"text":"Tem Wi-Fi?","highlights":[]},"answers":[{"text":"Sim tem Wi-Fi","answered_by_text":"Respondido pelo Mercado Livre"}],"origin":"INVENTED"},{"site":"MLB","question":{"text":"Tipo de console?","highlights":[]},"answers":[{"text":"De mesa","answered_by_text":"Respondido pelo Mercado Livre"}],"origin":"INVENTED"},{"site":"MLB","question":{"text":"Inclui Controles?","highlights":[]},"answers":[{"text":"Sim inclui controles","answered_by_text":"Respondido pelo Mercado Livre"}],"origin":"INVENTED"},{"site":"MLB","question":{"text":"Quantidade de controles incluídos?","highlights":[]},"answers":[{"text":"1","answered_by_text":"Respondido pelo Mercado Livre"}],"origin":"INVENTED"}],"see_more_limit":1,"see_more_text":{"text":"Ver mais 7 resultados"},"search_all_action":{"state":"VISIBLE","offline_state":"HIDDEN","tooltip":{"body":{"text":"Use o buscador para encontrar o que precisa saber entre todas as perguntas."}},"action":{"label":{"text":"Pesquisar entre 43 perguntas deste anúncio"},"track":{"melidata_event":{"path":"\u002Fpdp\u002Fqadb\u002Fsearch-all-action","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383"}}}}},"title":"Últimas perguntas feitas","track":{"melidata_event":{"path":"\u002Fquestions\u002Fqadb\u002Fsee_more","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","context":"PDP","query":"","see_more_limit":1,"total_answers":8}},"analytics_event":{"section":"QADB","action":"QUESTION-SEE-MORE","category":"QADB"}}}]},{"id":"MAKE_QUESTION","state":"HIDDEN","offline_state":"HIDDEN","is_big":false},{"id":"MAKE_QUESTION_MODAL","state":"HIDDEN","offline_state":"HIDDEN","title":"Ninguém perguntou isso ainda","subtitle":"Seja o primeiro!","place_holder":"Escreva sua pergunta","action":{"text":"Enviar pergunta","track":{"melidata_event":{"path":"\u002Fquestions\u002Fqadb\u002Fquestion","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","context":"PDP","query":""}},"analytics_event":{"section":"QADB","action":"QUESTION","category":"QADB"}},"form":{"placeholder":"Escreva sua pergunta","title":"Pergunte ao vendedor","confirm":"Enviar pergunta","cancel":"Cancelar"},"failure":{"message":"Ops! Ocorreu um erro. Por favor, tente novamente.","track":{"melidata_event":{"path":"\u002Fquestions\u002Fask\u002Fpost","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","context":"\u002Fqadb\u002Fpdp","failed":true}},"analytics_event":{"section":"QADB","action":"QUESTION-POST","category":"QADB"}}},"success":{"message":"Pronto! Enviamos a sua pergunta.","track":{"melidata_event":{"path":"\u002Fquestions\u002Fask\u002Fpost","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383","context":"\u002Fqadb\u002Fpdp","failed":false}},"analytics_event":{"section":"QADB","action":"QUESTION-POST","category":"QADB"}}},"item_id":"MLB1731058383","site_id":"MLB"}},{"id":"CALL_TO_ACTION","state":"VISIBLE","offline_state":"HIDDEN","tooltip":{"body":{"text":"Tente fazer uma busca primeiro. Se você ainda tiver dúvidas, pode perguntar ao vendedor."}},"action":{"label":{"text":"Como pergunto ao vendedor?"},"track":{"melidata_event":{"path":"\u002Fpdp\u002Fqadb\u002Fcall-to-action","event_data":{"catalog_product_id":"MLB16261616","item_id":"MLB1731058383"}}}}}],"track":{"event_data":{"results":[{"question_id":11687041755,"invented":false},{"question_id":11658854498,"invented":false},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true}],"item_id":"MLB1731058383","catalog_product_id":"MLB16261616","catalog_parent_id":"MLB16261614","context":"PDP"},"path":"\u002Fquestions\u002Fqadb\u002Fshow","experiments":{"qadb\u002Finvented-questions":"4316","qadb\u002Foffline_classifier_experiment":"4653","pdp\u002FpaymentMethods":"3899"}},"product_id":"MLB16261616","item_id":"MLB1731058383"},"track_view":{"melidata_event":{"path":"\u002Fquestions\u002Fqadb\u002Fshow","event_data":{"results":[{"question_id":11687041755,"invented":false},{"question_id":11658854498,"invented":false},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true},{"invented":true}],"item_id":"MLB1731058383","catalog_product_id":"MLB16261616","catalog_parent_id":"MLB16261614","context":"PDP"},"experiments":{"qadb\u002Finvented-questions":"4316","qadb\u002Foffline_classifier_experiment":"4653","pdp\u002FpaymentMethods":"3899"}}}},"questions":{"id":"questions","type":"questions","state":"HIDDEN","url":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Fquestions"},"reviews":{"id":"reviews","type":"reviews","state":"VISIBLE","title":"Opiniões sobre Sony PlayStation 4 Slim Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank","rating":"5.0","stars":"5","subtitle":"Média entre 6 opiniões","rating_levels":[{"value":6,"percentage":100,"label":{"text":"5 estrelas"}},{"value":0,"percentage":0,"label":{"text":"4 estrelas"}},{"value":0,"percentage":0,"label":{"text":"3 estrelas"}},{"value":0,"percentage":0,"label":{"text":"2 estrelas"}},{"value":0,"percentage":0,"label":{"text":"1 estrela"}}],"tabs_disabled":false,"tabs":[{"label":{"text":"Todos","color":"BLACK"},"preview_reviews":[{"id":90617105,"title":"MUITO BOM!!!","content":"Dei de presente para o meu filho e ele está adorando.","rate":5,"likes":1,"dislikes":0,"likeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F90617105?method=like","dislikeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F90617105?method=dislike"},{"id":87011963,"title":"Top demais!! ","content":"Tudo certo, o playstation 4 slim 1tb é top!.","rate":5,"likes":2,"dislikes":0,"likeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F87011963?method=like","dislikeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F87011963?method=dislike"},{"id":89585726,"title":"Produto de qualidade muito bom ????","content":"Show de bola recomendo a todos muito bom.","rate":5,"likes":0,"dislikes":0,"likeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F89585726?method=like","dislikeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F89585726?method=dislike"}],"action":{"target":"\u002Fproducts\u002FMLB16261614\u002Freviews?limit=10&offset=3&reviews_product_id=MLB16261614"},"track":{"melidata_event":{"path":"\u002Freviews\u002Ftab","event_data":{"catalog_product_id":"MLB16261616","type":"all"}}}},{"label":{"text":"Positivas","color":"BLACK"},"preview_reviews":[{"id":90617105,"title":"MUITO BOM!!!","content":"Dei de presente para o meu filho e ele está adorando.","rate":5,"likes":1,"dislikes":0,"likeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F90617105?method=like","dislikeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F90617105?method=dislike"},{"id":87011963,"title":"Top demais!! ","content":"Tudo certo, o playstation 4 slim 1tb é top!.","rate":5,"likes":2,"dislikes":0,"likeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F87011963?method=like","dislikeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F87011963?method=dislike"},{"id":89585726,"title":"Produto de qualidade muito bom ????","content":"Show de bola recomendo a todos muito bom.","rate":5,"likes":0,"dislikes":0,"likeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F89585726?method=like","dislikeHref":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616\u002Freviews\u002F89585726?method=dislike"}],"action":{"target":"\u002Fproducts\u002FMLB16261614\u002Freviews?relevance=positive&limit=10&offset=3&reviews_product_id=MLB16261614"},"track":{"melidata_event":{"path":"\u002Freviews\u002Ftab","event_data":{"catalog_product_id":"MLB16261616","type":"positive"}}}},{"label":{"text":"Negativas","color":"BLACK"},"preview_reviews":[],"message":{"title":{"text":"Não há nada aqui!","color":"BLACK"},"subtitle":{"text":"Excelente! Este produto não tem o´piniões ruins."}}}],"see_more_track":{"melidata_event":{"path":"\u002Freviews\u002Fsee_more","event_data":{"catalog_product_id":"MLB16261616","context":"PDP"}}},"all_reviews":{"type":"url","target":"\u002Fnoindex\u002Fcatalog\u002Freviews\u002FMLB16261614?noIndex=true&access=view_all&controlled=true&title=Opini%C3%B5es%20sobre%20Sony%20PlayStation%204%20Slim%20Marvel's%20Spider-Man\u002FHorizon%20Zero%20Dawn%20Complete%20Edition\u002FRatchet%20&%20Clank","label":{"text":"Ver todas as opiniões","color":"BLUE"}}},"footer_separator":{"id":"footer_separator","type":"separator","state":"VISIBLE","background_color":"BLACK_10","height":1,"separator_type":"LINE"},"bottom_separator":{"id":"bottom_separator","type":"separator","state":"VISIBLE","background_color":"LIGHT_GRAY","height":40,"separator_type":"SPACE"},"fullscreen_ad":{"id":"fullscreen_ad","type":"advertising","state":"VISIBLE","slot_id":"FULLSCREEN_AD","viewport_margin":1300,"google_ad":{"unit":"\u002F105773011\u002FMLB1144\u002FMLB11172","size":"fluid","ppid":"","enabled":true},"segmentation":{"position":"FULLSCREEN_AD","platform":"webmobile","brand":"Sony","model":"PlayStation 4"},"load_second_ad":false,"track":{"melidata_event":{"path":"\u002Fpdp\u002Fadvertising","event_data":{"advertising_id":"fullscreen_pdp"},"experiments":{"advertising\u002FpdpFullscreenWebMobile":"4563"}}}},"breadcrumb":{"id":"breadcrumb","type":"breadcrumb","state":"VISIBLE","categories":[{"target":"https:\u002F\u002Fgames.mercadolivre.com.br\u002Fgames\u002F","label":{"text":"Games"}},{"target":"https:\u002F\u002Fgames.mercadolivre.com.br\u002Fconsoles\u002F","label":{"text":"Consoles"}},{"target":"https:\u002F\u002Fgames.mercadolivre.com.br\u002Fconsoles\u002Fslim\u002F","label":{"text":"Slim"}}]},"related_reviews":{"id":"related_reviews","type":"related_reviews","state":"VISIBLE","title":{"text":"Opiniões sobre produtos relacionados"},"related_reviews":[{"target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Frp\u002Fmodelos-de-ps3","label":{"text":"Modelos de ps3"}},{"target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Frp\u002Fmodelos-de-console","label":{"text":"Modelos de console"}},{"target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Frp\u002Fmodelos-de-playstation-4","label":{"text":"Modelos de playstation 4"}},{"target":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Frp\u002Ftipos-de-ps3-qual-o-melhor","label":{"text":"Tipos de ps3 qual o melhor"}}]},"show_carousel_pads":{"id":"show_carousel_pads","type":"advertising_pads","state":"VISIBLE"},"metadata":{"id":"metadata","type":"metadata","state":"VISIBLE","url_canonical":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616","alternate_android":"android-app:\u002F\u002Fcom.mercadolibre\u002Fmeli\u002Fitem?id=MLB1731058383","alternate_ios":"ios-app:\u002F\u002F463624852\u002Fmeli\u002Fitem?id=MLB1731058383","tags":[{"name":"description","content":"Compre-o no Mercado Livre por R$ 2.950,00 - Pague parcelado - Frete grátis. Encontre mais produtos de Games, Consoles."},{"name":"twitter:card","content":"product"},{"name":"twitter:site","content":"Mercado Livre"},{"name":"twitter:title","content":"Sony PlayStation 4 Slim 1TB Marvel&quots Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank preto"},{"name":"twitter:description","content":"Inclui controle. | Com 3  jogos. | Memória RAM de 8GB. | Conta com: 1 cabo hdmi, 1 cabo usb, 1 cabo de alimentação, 1 assinatura a playstation plus por 3 meses. | Horas de diversão garantidas."},{"name":"twitter:image","content":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_NQ_NP_912332-MLA44183128109_112020-O.webp"},{"name":"twitter:domain","content":"mercadolivre.com.br"},{"name":"twitter:app:name:iphone","content":"Mercado Libre"},{"name":"twitter:app:id:iphone","content":"463624852"},{"name":"twitter:app:url:iphone","content":"meli:\u002F\u002Fitem?id=MLB1731058383"},{"name":"twitter:app:name:ipad","content":"Mercado Libre"},{"name":"twitter:app:id:ipad","content":"463624852"},{"name":"twitter:app:url:ipad","content":"meli:\u002F\u002Fitem?id=MLB1731058383"},{"name":"twitter:app:name:googleplay","content":"Mercado Libre"},{"name":"twitter:app:id:googleplay","content":"com.mercadolibre"},{"name":"twitter:app:url:googleplay","content":"meli:\u002F\u002Fitem?id=MLB1731058383"},{"property":"og:description","content":"Inclui controle. | Com 3  jogos. | Memória RAM de 8GB. | Conta com: 1 cabo hdmi, 1 cabo usb, 1 cabo de alimentação, 1 assinatura a playstation plus por 3 meses. | Horas de diversão garantidas."},{"property":"og:image","content":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_NQ_NP_912332-MLA44183128109_112020-O.webp"},{"property":"og:title","content":"Sony PlayStation 4 Slim 1TB Marvel&quots Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank preto - R$ 2.950,00"},{"property":"og:type","content":"meli-br:product"},{"property":"og:url","content":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616"},{"property":"fb:app_id","content":"253960718025486"},{"name":"al:android:url","property":"al:android:url","content":"meli:\u002F\u002Fitem?id=MLB1731058383"},{"name":"al:android:app_name","property":"al:android:app_name","content":"Mercado Libre"},{"name":"al:android:package","property":"al:android:package","content":"com.mercadolibre"},{"name":"al:iphone:url","property":"al:ios:url","content":"meli:\u002F\u002Fitem?id=MLB1731058383"},{"name":"al:iphone:app_name","property":"al:ios:app_name","content":"Mercado Libre"},{"name":"al:iphone:app_store_id","property":"al:ios:app_store_id","content":"463624852"}],"title":"Sony PlayStation 4 Slim 1TB Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank preto | Mercado Livre"}},"schema":[{"name":"Sony PlayStation 4 Slim 1TB Marvel's Spider-Man\u002FHorizon Zero Dawn Complete Edition\u002FRatchet & Clank preto","image":"https:\u002F\u002Fhttp2.mlstatic.com\u002FD_NQ_NP_912332-MLA44183128109_112020-O.webp","gtin8":"00711719538660","offers":{"price":2950,"availability":"http:\u002F\u002Fschema.org\u002FInStock","url":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616","@type":"Offer","priceCurrency":"BRL","priceValidUntil":"2021-01-06"},"review":[{"author":{"name":"Usuário do Mercado Livre","@type":"Person"},"@type":"Review","reviewBody":"Dei de presente para o meu filho e ele está adorando.","reviewRating":{"bestRating":5,"ratingValue":5,"worstRating":1}},{"author":{"name":"Usuário do Mercado Livre","@type":"Person"},"@type":"Review","reviewBody":"Tudo certo, o playstation 4 slim 1tb é top!.","reviewRating":{"bestRating":5,"ratingValue":5,"worstRating":1}},{"author":{"name":"Usuário do Mercado Livre","@type":"Person"},"@type":"Review","reviewBody":"Show de bola recomendo a todos muito bom.","reviewRating":{"bestRating":5,"ratingValue":5,"worstRating":1}}],"description":"Inclui controle. | Com 3  jogos. | Memória RAM de 8GB. | Conta com: 1 cabo hdmi, 1 cabo usb, 1 cabo de alimentação, 1 assinatura a playstation plus por 3 meses. | Horas de diversão garantidas.","brand":"Sony","sku":"MLB16261616","weight":"2.1 kg","width":"265 mm","height":"39 mm","@context":"http:\u002F\u002Fschema.org","@type":"Product","aggregateRating":{"@type":"AggregateRating","ratingValue":5,"reviewCount":6},"itemCondition":"https:\u002F\u002Fschema.org\u002FNewCondition","productID":"MLB16261616"},{"@context":"http:\u002F\u002Fschema.org","@type":"BreadcrumbList","itemListElement":[{"position":1,"item":{"name":"Games","@id":"https:\u002F\u002Fgames.mercadolivre.com.br\u002Fgames\u002F"},"@type":"ListItem"},{"position":2,"item":{"name":"Consoles","@id":"https:\u002F\u002Fgames.mercadolivre.com.br\u002Fconsoles\u002F"},"@type":"ListItem"},{"position":3,"item":{"name":"Slim","@id":"https:\u002F\u002Fgames.mercadolivre.com.br\u002Fconsoles\u002Fslim\u002F"},"@type":"ListItem"}]},{"about":"Características principais","@context":"http:\u002F\u002Fschema.org","@type":"Table"}],"recommendations_context":{"item_id":"MLB1731058383","product_id":"MLB16261616","category_id":"MLB11172"},"history":{"id":"MLB1731058383","product_id":"MLB16261616","parent_product_id":"MLB16261614"},"selected_offer_type":null,"highlighted_tech_spec_config":{"is_editorialized":false},"pathName":"\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616","parentUrl":"https:\u002F\u002Fwww.mercadolivre.com.br\u002Fsony-playstation-4-slim-1tb-marvels-spider-manhorizon-zero-dawn-complete-editionratchet-clank-preto\u002Fp\u002FMLB16261616","siteId":"MLB"},"csrfToken":"azmwWUwo-6LO2QjAT-WRsaTpQK1NnpXi8GGQ","baseURL":"\u002Fp\u002FMLB16261616","flashMessage":null};
+        }},{s:function(){(function(){dataLayer = [{"pageId":"PDP","vertical":"core","siteId":"MLB","itemId":"MLB1731058383","catalogParentId":"MLB16261614","catalogProductId":"MLB16261616","domainId":"MLB-GAME_CONSOLES","rootCategoryId":"MLB1144","pathToRoot":"MLB1144,MLB11172","categoryId":"MLB11172","reviewRate":5,"brandId":"Sony","cartContent":true,"itemPrice":567.67,"localItemPrice":2950,"currencyId":"BRL","sellerId":16712557,"reputationLevel":"5_green","freeShipping":true}]; })()}},{s:function(){(function() {
+    var defaults = {
+        imageLoadClassName: 'lazy-loadable', // 'lazy-loadable' || 'onload-loadable'
+        options: {
+            rootMargin: '360px',
+            loadMode: 'lazy' // 'lazy' || 'onload'
+        }
+    };
+    var dataSrcKey = 'data-src';
+    var dataSrcFallbackKey = 'data-src-fallback';
+    var dataSrcSetKey = 'data-srcset';
+
+    // IntersectionObserver has partial support in chrome <= 57 (https://caniuse.com/#feat=intersectionobserver)
+    var supportIntersectionObserver = 'IntersectionObserver' in window && 'IntersectionObserverEntry' in window && 'isIntersecting' in window.IntersectionObserverEntry.prototype;
+
+  function mergeOptions(target, source) {
+    var list = [target, source];
+    var cloned = {};
+
+    for (var i = 0; i <= list.length; i++) {
+      if (typeof list[i] === 'object' && list[i]) {
+        for (var prop in list[i]) {
+          cloned[prop] = list[i][prop];
+        }
+      }
+    }
+    return cloned;
+  }
+
+  function imageLazyLoading(imageLoadClassName, options, node) {
+        if (!imageLoadClassName && options && options.loadMode === 'onload') {
+          imageLoadClassName = 'onload-loadable';
+        }
+        imageLoadClassName = imageLoadClassName || defaults.imageLoadClassName;
+
+        options = mergeOptions(defaults.options, options);
+
+        var lazyImages = node ? 
+                              [].concat(node.classList.contains(imageLoadClassName) ? [node] : []) :
+                              [].slice.call(document.querySelectorAll('.' + imageLoadClassName));
+
+        function loadImages(img) {
+            function setSource(attr, srcKey, srcFallbackKey) {
+                if (img.hasAttribute(srcKey)) {
+                    var dataSrc = img.getAttribute(srcKey);
+                    if (srcFallbackKey && img.hasAttribute(srcFallbackKey)) {
+                      var dataSrcFallback = img.getAttribute(srcFallbackKey);
+                      img.onload = function() {
+                        img.removeAttribute(srcFallbackKey);
+                      }
+                      img.onerror = function() {
+                        this.src = dataSrcFallback;
+                        this.srcset = dataSrcFallback;
+                        img.removeAttribute(srcFallbackKey);
+                        img.onerror = null;
+                      };
+                    }
+                    img.setAttribute(attr, dataSrc);
+                    img.removeAttribute(srcKey);
+                }
+            }
+
+            setSource('src', dataSrcKey, dataSrcFallbackKey);
+            setSource('srcset', dataSrcSetKey);
+
+            img.classList.remove(imageLoadClassName);
+
+            if (img.classList.length < 1) {
+                img.removeAttribute('class');
+            }
+        }
+
+        function loadAllImages() {
+          lazyImages.forEach(function(image) {
+                loadImages(image);
+            });
+        }
+
+        if (supportIntersectionObserver && options.loadMode === 'lazy') {
+            var lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var lazyImage = entry.target;
+                    loadImages(lazyImage);
+                    lazyImageObserver.unobserve(lazyImage);
+                }
+                });
+            }, options);
+
+            lazyImages.forEach(function(lazyImage) {
+                lazyImageObserver.observe(lazyImage);
+            });
+
+            window.lazyImageObserver = lazyImageObserver;
+        
+          // This condition enter on fallback or loadMode is onLoad
+        } else if ((!supportIntersectionObserver && options.loadMode === 'lazy') || options.loadMode === 'onload') {
+            if (document.readyState === 'complete') {
+                loadAllImages();
+            } else {
+                window.addEventListener('load', function() {
+                    loadAllImages();
+                });
+            }
+        }
+    }
+
+    function initLazyLoading() {
+      imageLazyLoading();
+      imageLazyLoading('onload-loadable', { loadMode: 'onload' });
+    }
+
+    window.imageLazyLoading = imageLazyLoading;
+    initLazyLoading();
+}());
+}},{s:undefined,id:"__LOADABLE_REQUIRED_CHUNKS__",c:'[0,11,4,10,9,5,6,7,8,2,3]'}]);
+  var scripts = [{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/polyfill.6bb41f86.js"},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/vendor.5be330bc.js"},{s:function(){'use strict';(function(a){var b='https://matt'+a.location.hostname.substr(a.location.hostname.indexOf('.'),a.location.hostname.length),c=a.location.href;if(b=b.concat('?go=').concat(encodeURIComponent(c)),navigator&&navigator.sendBeacon)status=navigator.sendBeacon(b);else{var d=new XMLHttpRequest;d.open('GET',b),d.send()}})(window);}},{s:function(){
+      !function(n,e){n.mitt=e()}(this,function(){function n(n){return n=n||Object.create(null),{on:function(e,t){(n[e]||(n[e]=[])).push(t)},off:function(e,t){n[e]&&n[e].splice(n[e].indexOf(t)>>>0,1)},emit:function(e,t){(n[e]||[]).map(function(n){n(t)}),(n["*"]||[]).map(function(n){n(e,t)})}}}return n});
+      window.freya = mitt();
+    }},{s:"https://http2.mlstatic.com/ui/searchbox/2.5.0/index.js",c:function(){
+      if (window.Searchbox) {
+        new window.Searchbox('.nav-search-input', {
+          platformId: 'ML',
+          siteId: 'MLB',
+          siteDomain: 'mercadolivre.com.br',
+          limit: 6,
+          searchEndpoint: 'https://lista.mercadolivre.com.br/$query',
+          categoryEndpoint: 'null',
+          categoryCheckbox: document.getElementById('categorySearch'),
+          loggedIn: false,
+          
+          bus: window.freya,
+          deviceType: 'mobile'
+        });
+      }
+    }},{s:"https://http2.mlstatic.com/resources/frontend/statics/ml-widgets/nav-cart/v1.3.1/CartWidget.js",c:function(){
+        if (window.CartWidget) {
+          new window.CartWidget({
+            element: document.getElementById('nav-cart'),
+            endpoints: {
+              get: 'https://www.mercadolivre.com.br/gz/cart/info',
+              post: 'https://www.mercadolivre.com.br/gz/cart/api/item',
+            },
+            link: 'https://www.mercadolivre.com.br/gz/cart',
+            isMobile: true,
+            bus: freya,
+            locale: 'es',
+          });
+        }
+        }},{s:"https://http2.mlstatic.com/resources/frontend/statics/ml-widgets/snackbar/v1.0.0/snackbar.js",c:function(){
+        (function (win, freya) {
+          if (win.SnackbarWidget && typeof freya !== 'undefined') {
+            new win.SnackbarWidget({
+              bus: freya,
+            });
+          }
+        }(window, window.freya));        
+        }},{s:function(){
+          var cookieBanner = document.getElementById("cookieDisclaimerBanner");
+          document.getElementById("cookieDisclaimerButton").addEventListener("click", function() {
+            var expirarion_date = 365 * 3;
+            var now = new Date();
+            now.setDate(now.getDate() + expirarion_date);
+            document.cookie = '_ml_cbanner_mlb=1; expires=' + now.toUTCString() + '; path=/; domain=mercadolivre.com.br; SameSite=None; Secure';
+            cookieBanner.parentNode.removeChild(cookieBanner);
+          });
+        }},{s:function(){"use strict";
+
+(function () {
+  window.__navigation_track__({
+    melidata: {
+      type: 'view',
+      path: '/navigation/cookie-disclaimer/show'
+    }
+  });
+
+  window.__navigation_tracking__('#cookieDisclaimerButton', 'click', {
+    melidata: {
+      type: 'event',
+      path: '/navigation/cookie-disclaimer/accept'
+    }
+  });
+})();}},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/pdp.mobile.7e311c28.js"},{s:function(){
+        (function(h,o,t,j,a,r){
+          h.hj= h.hj || function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:580848,hjsv:5};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+        hj('tagRecording', ["vipPDP"]);
+        hj('trigger', 'vipPDP');
+      }},{s:function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T9PL');}},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/chunk-variations-mobile.8004d1f3.js"},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/chunk-buybox-mobile.39f11572.js"},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/chunk-return-mobile.b09746e3.js"},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/chunk-recommendations-top-mobile.24a62c25.js"},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/chunk-comparator-mobile.48794d78.js"},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/chunk-payments-mobile.7a924e1e.js"},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/chunk-questions-mobile.b03d97fa.js"},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/chunk-recommendations-bottom-mobile.ceff85cf.js"},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/chunk-ads-mobile.09d2eade.js"},{s:"https://http2.mlstatic.com/resources/frontend/statics/vpp-frontend/chunk-breadcrumb-related-reviews-mobile.ab325579.js"}];
+  if (doc.readyState === 'complete') {
+    loadScripts(scripts);
+  } else {
+    win.addEventListener('load', function(){ loadScripts(scripts); });
+  }
+})(window, document);
+  </script> 
+ 
+</body>
+</html>
